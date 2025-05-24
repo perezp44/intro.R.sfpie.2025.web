@@ -30,7 +30,7 @@ usethis::use_github() #- funciono
 credentials::set_github_pat()
 git add -A
 git commit --all --message "todo a Github"
-git push -u origin master
+git push -u origin main
 
 
 
