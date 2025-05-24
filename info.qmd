@@ -147,7 +147,7 @@ pkgs <- pak::pkg_list()
 ::: {.callout-important collapse="true" appearance="default" icon="false"}
 ##  Más cosas sobre instalación R
 
-Lo que hay en esta sección [[no se ha de ejecutar]{.ubderline}, y si lo ejecutas 😉, siempre después de haber instalado los 3 programas y los paquetes. Mejor **espérate al segundo día del curso!!**
+Lo que hay en esta sección [no se ha de ejecutar]{.underline}, y si lo ejecutas 😉, siempre después de haber instalado los 3 programas y los paquetes. Mejor **espérate al segundo día del curso!!**
 
 
 - Para chequear qué versiones del software tienes instaladas, podemos usar **en la TERMINAL** el siguiente código:
