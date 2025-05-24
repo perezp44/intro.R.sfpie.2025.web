@@ -54,7 +54,7 @@ Durante "mis 4 sesiones" del curso utilizaremos, en clase, las siguientes **slid
 Por último, está sección contiene, simplemente, un conjunto de enlaces que quiero tener a mano, por si los necesito durante las clases:
 
 
--   [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV)
+-   [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV){target="_blank"}
 
 -   {{< var my_posit_cloud_project >}}  <!-- Posit Cloud project -->
 
