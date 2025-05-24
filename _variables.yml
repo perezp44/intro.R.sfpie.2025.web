@@ -1,0 +1,28 @@
+email:
+  pedro: pedro@uvv.es
+  juan: juan@gmaillll.com
+
+pedroblog: "[Pedro's blog's](https://www.uv.es/pjperez/mys_blogs.html)"
+webcurso: "[https://go.uv.es/pjperez/intro.to.quarto](https://perezp44.github.io/intro.to.quarto/){target='blank'}"
+lineanaranja: "<hr color='#EB811B' size=1px width=1644px>"
+my_subtitle: "Escribiendo con Quarto <br> (Web del curso [aquí](https://perezp44.github.io/intro.to.quarto/){target='blank'})"
+my_subtitle2: "(Web del curso [aquí](https://perezp44.github.io/intro.to.quarto/){target='blank'})"
+my_curso: "[Escribiendo con R y Quarto](https://perezp44.github.io/intro.to.quarto/){target='blank'}"
+
+
+#- las de abajo hay q cambiarlas cada año -----------
+my_title_web: "Introducción a R (SFPIE, 2025)"
+my_url_web: https://perezp44.github.io/intro.R.sfpie.2025.web/
+my_url_repo_github: https://github.com/perezp44/intro.R.sfpie.2025.web
+my_anyo_edicion: ", edición de 2025"
+
+my_anyo_web: "© 2025 Pedro J. Pérez"   #- la fecha del footer de la web
+my_aula: "el [Aula 0.1](https://www.google.es/maps/place/Centro+de+Formaci%C3%B3n+y+Calidad+Manuel+Sanchis+Guarner/@39.4750955,-0.346133,17z/data=!3m1!4b1!4m6!3m5!1s0xd6049dbfd241e75:0xc257e3f91a60e197!8m2!3d39.4750914!4d-0.3435581!16s%2Fg%2F11r_fpk8ms?hl=es&entry=ttu) del SFPIE (Centro de Formación y Calidad Manuel Sanchis Guarner, Campus de Tarongers)"
+my_ficha_oficial_curso: "https://www.uv.es/uvweb/servicio-formacion-permanente-innovacion-educativa/es/oferta-formativa/introduccion-r-1286213964422/PDIFormacio.html?id=1286418250220"
+my_posit_cloud_project: "[Posit Cloud Project](https://posit.cloud/content/6139160)"
+my_curso_BigData: "[Programación y manejo de datos con R](https://perezp44.github.io/intro-ds-24-25-web/)"
+my_curso_R_sfpie: "[Curso de introduccióna R, SFPIE, 2024](https://perezp44.github.io/intro.R.sfpie.2024.web/)"
+my_curso_quarto_sfpie: " [Creación de documentos reproducibles con R y Quarto](https://perezp44.github.io/intro.to.quarto.2024/)"
+
+my_aula_virtual: "Aula Virtual de la asignatura: [Grupo PAS](https://aulavirtual.uv.es/course/view.php?id=90188) y [Grupo PDI](https://aulavirtual.uv.es/course/view.php?id=90187)"
+my_fecha_slides: "2024-04-19"  #- no consigo enchufarla en el yaml:  https://github.com/quarto-dev/quarto-cli/issues/9419

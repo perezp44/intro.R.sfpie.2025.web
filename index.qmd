@@ -1,0 +1,40 @@
+---
+title: "<br>**Bienvenidos al curso!!!**<br>"
+image: imagenes/caratula.png
+about:
+  #- https://quarto.org/docs/websites/website-about.html#templates
+  template: trestles  #- {jolla, solana, trestles}
+  #- https://quarto.org/docs/websites/website-about.html#image
+  image-width: 33em  #- 39
+  image-shape: rectangle
+  #- https://quarto.org/docs/websites/website-about.html#links
+  # links:
+  #   - icon: github
+  #     href: https://github.com/perezp44
+  #   - icon: twitter
+  #     href: https://twitter.com/pjpv4444
+  #   - icon: envelope
+  #     url: "mailto:<pedro.j.perez@uv.es>"
+---
+
+**Bienvenidos** a la web del curso "Introducción a R" del SFPIE, Universitat de València {{< var my_anyo_edicion >}}. 
+
+
+El curso tiene 30 horas distribuidas en 8 sesiones y **2 profesores**: Vicente Coll y yo mismo, [`pedro.j.perez@uv.es`](mailto:pedro.j.perez@uv.es). Cada uno impartirá 4 sesiones. 
+
+<br><br>
+
+
+Esta web tiene el propósito de facilitar el acceso a los **materiales que usaremos durante las 4 sesiones a mi cargo**:
+
+- Los **detalles sobre el curso** (horario, aula, ...) están en [Info](info.qmd).
+
+
+- Los **materiales** están en [Materiales](materiales.qmd).
+
+
+- Puedes encontrar [recursos adicionales]{style="text-decoration: underline;"} para aprender R en [Recursos](recursos.qmd)
+
+<br><br>
+
+Nos vemos pronto en {{< var my_aula >}}

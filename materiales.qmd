@@ -1,0 +1,71 @@
+---
+title: ""
+---
+
+
+::: {.callout-important appearance="default" icon="false"}
+#### Importante!!
+
+-   Durante el curso interactuaremos con [R](https://cran.r-project.org/) a través de [RStudio](https://www.rstudio.com/products/rstudio/). También usaremos [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas. En [Info](info.qmd) tienes los links de instalación.
+:::
+
+<br>
+
+# Materiales para el curso
+
+
+En clase me apoyaré en las **slides** que hay más abajo, pero también trabajaremos con scripts, ejemplos, datos etc ... que están todos juntos en un **Rproject**^[De momento podemos pensar que un Rproject no es más que una carpeta con materiales. Ya os explicaremos un poco más en clase] que también tenéis más abajo y que tenéis que descargaros. 
+
+## Slides
+
+Durante "mis 4 sesiones" del curso utilizaremos, en clase, las siguientes **slides**:
+
+- [Tidyverse: Introducción](/slides/slides_01_intro_v3_to-the-tidyverse.html){target="_blank"}
+
+- [Tidyverse: Importación/exportación datos](/slides/slides_04_cargar-datos.html){target="_blank"}
+
+- [Tidyverse: Data munging (I)](/slides/slides_05A_data-munging.html){target="_blank"}
+
+- [Tidyverse: Data munging (II)](/slides/slides_05B_data-munging.html){target="_blank"}
+
+- [Tidyverse: Rmarkdown](/slides/slides_07a_rmarkdown.html){target="_blank"}
+
+- [Tidyverse: Introducción a Quarto](/slides/slides_07b_intro-a-Quarto.html){target="_blank"}
+
+
+(Si quieres, puedes descargar todas las slides [aquí](./slides/slides_all.zip){target="_blank"})
+
+<br>
+
+## Rproject's (a descargar)
+
+- El Rproject que usaremos en mis 4 sesiones, [`pedro.j.perez@uv.es`](mailto:pedro.j.perez@uv.es), puedes descargarlo [aquí](./materiales/Rproject_pjp_2025.zip){target="_blank"}.
+
+    (Al pinchar, se te descargará una archivo comprimido llamado `Rproject_pjp_2025.zip`. Descomprime el archivo y así tendrás en tu ordenador el Rproject con los materiales (scripts, ejemplos, datos ...) que utilizaremos en clase.)
+
+<br>
+
+- Al final, en la última sesión también usaremos este otro Rproject, que puedes descargar [aquí](./materiales/quarto_eurovision.zip){target="_blank"}. Esta vez el proyecto se llama `quarto_eurovision`; ya sabes, es solo descargarlo y descomprimirlo para usarlo en clase. Nos servirá para practicar con Quarto.
+
+<br>
+
+## Logística
+
+Por último, está sección contiene, simplemente, un conjunto de enlaces que quiero tener a mano, por si los necesito durante las clases:
+
+
+-   [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV)
+
+-   {{< var my_posit_cloud_project >}}  <!-- Posit Cloud project -->
+
+-   {{< var my_curso_BigData >}}  <!-- Programación y manejo de datos con R -->
+
+-   {{< var my_curso_quarto_sfpie >}}  <!-- Curso quarto SFPIE -->
+
+-   {{< var my_aula_virtual >}}  <!-- Aula Virtual del curso Quarto -->
+
+
+
+
+<br><br>
+

@@ -1,0 +1,56 @@
+---
+title: Pedro J. Pérez
+image: imagenes/foto_pedro-perez.jpg
+about:
+  #- https://quarto.org/docs/websites/website-about.html#templates
+  template: trestles  #- {jolla, solana, trestles}
+  #- https://quarto.org/docs/websites/website-about.html#image
+  image-width: 7em
+  image-shape: rectangle
+  #- https://quarto.org/docs/websites/website-about.html#links
+  links:
+    - icon: envelope
+      text: email
+      url: "mailto:<pedro.j.perez@uv.es>"
+    - icon: globe
+      text: Web
+      href: https://www.uv.es/pjperez/
+      target: _blank
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=PXaWcW4AAAAJ&hl=en
+      target: _blank
+    - icon: globe
+      text: ORCID
+      href: https://orcid.org/0000-0001-9375-6330
+      target: _blank
+    - icon: globe
+      text: Blog
+      href: https://perezp44.github.io/Rflowers.2024/
+      target: _blank
+    - icon: mastodon
+      text: Mastodon 
+      href: https://fosstodon.org/@pjperez
+      target: _blank
+    - icon: github
+      text: Github
+      href: https://github.com/perezp44
+      target: _blank
+format:
+  html:
+    code-tools: false
+---
+
+Mi nombre es Pedro J. Pérez. Soy **profesor** del departamento de Análisis Económico de la **Universitat de València**. Me gusta aprender y trastear con R; vamos, que aún soy un **entusiasta de R**. Me divierto!!
+
+Podemos decir que tengo "bastante" experiencia con **R** porque **lo utilizo en mi docencia e investigación**; de hecho, imparto una asignatura en el grado de Economía que es una **introducción a la Ciencia de datos con R**, [aquí](https://perezp44.github.io/intro-ds-22-23-web/){target="_blank"} puedes ver su web. También imparto, como sabes, un curso de introducción a R en el SFPIE, [aquí](https://perezp44.github.io/web.SFPIE.2022/){target="_blank"} puedes ver la web de otra de sus ediciones.
+
+<br>
+
+Profe, el último día del curso de R haremos una [breve introducción a Quarto]{.underline}, un sistema para generar publicaciones científicas en el entorno R que es lo más, pero ¿cuanta experiencia tienes sobre Quarto? Bueno, no tanta porque **Quarto apareció en junio de 2022**; pero aún así, ya impartí el taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/){target="_blank"} en las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} en noviembre de 2022. A pesar del título del taller, no soy bloguero-bloguero, mas bien soy un creador y liquidador de blogs. [Aquí](https://www.uv.es/pjperez/mys_blogs.html){target="_blank"}, puedes ver un listado no exhaustivo de los blogs que he liquidado.
+
+
+Además, el [SFPIE ofrece]{.underline} un **Curso de introducción a Quarto** de 15 horas. [Aquí](https://perezp44.github.io/intro.to.quarto.2025/){target="_blank"} puedes ver la web del curso en su edición de 2025. Visualmente se parece mucho a la web del curso de introducción a R; de hecho, las 2 webs han sido hechas con Quarto^[Además, hay que reciclar!! ], pero los contenidos, salvo un pequeño solapamiento, sí son diferentes. ¿Adivináis quien es el profe del nuevo curso? 😉
+
+<br>
+

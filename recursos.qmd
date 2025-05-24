@@ -1,0 +1,132 @@
+---
+title: "Estrategía(s) y recursos adiconales para aprender R"
+---
+
+<br>
+
+En primer lugar os presento varias **estrategia(s)** para aprender R; después os facilito un listado de **recursos** para ello. Estos recursos no son para el curso, son recursos adicionales, que sólo están aquí por si decides continuar tu aprendizaje de R cuando acabe el curso.
+
+<br>
+
+## 1. Estrategía(s) to learn R
+
+En primer lugar os intentaré convencer de la que para mi es la **estrategia adecuada** para aprender R. Más abajo os presento **otras estrategias**. 
+
+<br>
+
+
+::: {.callout-important appearance="default" icon="false"}
+#### Mi opinión
+
+Es solo mi opinión pero, sinceramente creo, que **para aprender R hay que lanzarse** a usarlo. La siguiente sección trata de argumentarlo y medio convenceros de ello.
+:::
+
+<br>
+
+#### Una buena chapa
+
+Si habéis venido al curso es que **queréis aprender R** y como sois muy buenos aprendiendo, parece que va a ser "easy-peasy-lemon-squeezy", pero no, **no es tan fácil**. Como me dijo una de las matriculadas al curso por mail, aprender R es "una carrera de fondo". Sí, como muchas cosas más, con R siempre se está aprendiendo, nunca lo "sabes todo" ni estás los "suficientemente preparado". 
+
+Creo que **la principal barrera para aprender R**, para llegar a usarlo en el día a día, es justamente la que señalo arriba, que la gente se dice, bueno, aún no estoy preparado, me hace falta un curso más o leer un libro más y ya después empezaré a usar R. Nooo😱, this is not the way!!! Créeme, llevo ya muchas ediciones del curso viendo compañeros superinteligentes que les gustaría usar R pero acaban dejándolo, bueno en realidad ni siquiera empiezan^[Yo aún sigo creyendo que aprenderé a tocar la guitarra sin practicar en casa].
+
+Mi experiencia (llevo ya unas cuantas ediciones del curso de intro a R) me dice que hay que lanzarse. Sí, repito, tienes que **lanzarte a usar R desde el principio**, primero en proyectos sencillitos^[¿Que qué proyectos? Puede ser simplemente tratar de replicar con R algo que ya hayas hecho con otro programa; aunque yo casí recomiendo replicar proyectos de otros. ¿Que donde puedes obtener código para replicar proyectos de otros? hay muchos sitios, pero yo te recomiendo 2: [R-weekly](https://rweekly.org/){target="_blank"} y  [Kaggle](https://www.kaggle.com/datasets){target="_blank"} ], lógico, pero que te interesen, y poco a poco vas aprendiendo, te vas metiendo. Si no me crees, te lo va a explicar mucho mejor [este vídeo](https://www.youtube.com/watch?v=_5LhYsKpOOA){target="_blank"}^[Son 5 minutillos] de un programador de Phyton.
+
+Por los mails que he recibido, muchos de vosotros tenéis nivel cero de R. Claro, si tienes nivel cero igual si tienes que esperar un poco y formarte un poco más en R, seguramente **las 30 horazas de R del curso igual no son suficientes**.
+
+¿Que me contradigo? sí, es verdad, pero en mi opinión, **para "formarte lo suficiente" es suficiente con leerte un libro**^[Aunque hay muchas otras estrategias, mira más abajo], solo uno, y luego ya te lanzas. Yo os recomiendo [este libro](https://r4ds.hadley.nz/){target="_blank"}. Intenta leerlo siguiendo y ejecutando el código e intentando hacer los ejercicios. Como ayuda aquí tienes [un repo](https://github.com/nhs-r-community/r4ds-ed2-exercise-solutions){target="_blank"} con las soluciones. 
+
+Evidentemente harás lo que puedas/quieras ... y tampoco hay ninguna obligación de usar R: se pueden hacer las cosas de otra manera (SPSS, Stata, etc...). Además, como sabes, no siempre hay tiempo para todo ni [todos los huesos aguantan el peso](https://www.youtube.com/watch?v=YDi93857xFQ){target="_blank"}^[Lo dice Xoel López en Reconstrucción (en versión confinada). Si saltas la publicidad de Youtube oirás una canción chulísima y cuyo mensaje viene al caso]. Vamos que no podemos llegar a todo y hay que aceptarlo. Que os voy a contar!!! 
+
+Se acabó la chapa 😄😄^[Por favor, si alguien siente que la chapa/consejo funcionó con ella/él, que me lo diga!!!]
+
+<br>
+
+#### Bibliografía (para seguir mi estrategía)
+
+Para ser coherente con el discurso de arriba, no os voy a dar una lista de libros, solo **voy a insistir en recomendarte** [este libro](https://r4ds.hadley.nz/){target="_blank"}. Es un libro de Hadley Wickham el científico jefe de Posit/Rstudio y "creador" del tidyverse.
+
+Hay una [primera edición](https://r4ds.had.co.nz/){target="_blank"} del libro que está también muy bien y también tiene [libro de soluciones](https://jrnold.github.io/r4ds-exercise-solutions/){target="_blank"}.
+
+<br>
+
+
+#### Otras propuestas para aprender R
+
+- [¿Nuevo en R? Empieza aquí](https://www.bigbookofr.com/new-to-r-start-here){target="_blank"}
+
+
+-   [How to get started with Data Science using R](https://www.r-bloggers.com/how-to-get-started-with-data-science-using-r/){target="_blank"}
+
+-   [Tutorials for learning R](https://www.r-bloggers.com/how-to-learn-r-2/#h.nl3rvdr3ycsc){target="_blank"}
+
+(Las 2 últimas son de 2015 ... buff, hace casi un siglo, igual ya un poco anticuadas, pero tienen partes todavía válidas).
+
+<br><br>
+
+
+## 2. Recursos para aprender R
+
+La comunidad R es muy dinámica y en general comparte sus **materiales**, lo que hace que los recursos para aprender R sean, exagerando un poco, **casi infinitos**. Es imposible abarcarlo todo, es una avalancha continúa de nuevas paquetes, análisis, cursos, libros, etc....
+
+<br>
+
+#### The BigBook of R
+
+-  [The BigBook of R](https://www.bigbookofr.com/){target="_blank"}. Un libro que recopila muchos recursos para aprender R.
+
+<br>
+
+#### Awesome lists
+
+Mucha gente hace sus propias listas de recursos R, aquí tienes algunas:
+
+-   [Awesome R Learning Resources](https://github.com/iamericfletcher/awesome-r-learning-resources){target="_blank"}
+
+-   [Learning R resources](https://github.com/Joscelinrocha/Learning-R-Resources){target="_blank"}
+
+-   [www.learnr4free.com](https://www.learnr4free.com/en/index.html){target="_blank"}
+
+<br>
+
+
+#### Necesito un paquete para ...
+
+-   [Listado sencillo](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages){target="_blank"}
+
+-   [Listado completo de CRAN agrupado por temática](https://cran.r-project.org/web/views/){target="_blank"}
+
+-   [AWESOME list de pkgs](https://github.com/qinwf/awesome-R){target="_blank"}
+
+-   [Listado de pkgs agrupados por fase del análisis](https://github.com/rstudio/RStartHere?utm_content=buffercf5d8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer){target="_blank"}
+
+<br>
+
+
+#### Más recursos
+
+-   [Quick-R](http://www.statmethods.net/){target="_blank"}
+
+-   [r-statistics.co](http://r-statistics.co/){target="_blank"}
+
+-   [Modern Drive](https://moderndive.com/){target="_blank"}: un libro, en realidad un bookdown, que me gusta.
+
+-   [swirl](https://swirlstats.com/){target="_blank"}: swirl teaches you R programming and data science interactively, at your own pace, and right in the R console!
+
+-   [R views](https://rviews.rstudio.com/){target="_blank"}: Un blog de la comunidad R editado por RStudio. Cada mes saca un post con los mejores 40 paquetes de ese mes; por ejemplo, [aquí](https://rviews.rstudio.com/2023/05/25/april-2023-top-40-new-cran-packages/) tienes el de abril de 2023.
+
+-   [Stack Overflow](http://stackoverflow.com/questions/tagged/r){target="_blank"}: si al final acabas utilizando R para tus análisis, seguramente acabarás utilizando Stack Overflow^[Sí, esto era antes de ChatGPT]. Es una comunidad de programadores, en la que muchas veces resolverás las dudas que te puedan surgir en tu aprendizaje sobre R.
+
+<br>
+
+#### Recursos para buscar inspiración para tus proyectos
+
+-   [R-weekly](https://rweekly.org/){target="_blank"}: cada semana envían un archivo con los mejores análisis hechos con R esa semana. Tienes que apuntarte [aquí](https://feedburner.google.com/fb/a/mailverify?uri=rweekly&loc=en_US).
+
+-   [Kaggle](https://www.kaggle.com/datasets){target="_blank"}: plataforma para aprender ML. Encontrarás datos y análisis de estos.
+
+-   [R-bloggers](https://www.r-bloggers.com/){target="_blank"}: Un agregador de blogs relacionados con R.
+
+-   [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday){target="_blank"}: cada semana lanzan una competición de visualización con unos datos.
+
+<br>
+
