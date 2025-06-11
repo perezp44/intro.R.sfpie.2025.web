@@ -97,9 +97,8 @@ install.packages("pak")
 mys_pkgs <- c("tidyverse", "curl", "eurostat", "here", "palmerpenguins", "quantmod", "rio", "gt", "DT", "gapminder", "markdown")
 pak::pkg_install(mys_pkgs)   
 
-mys_pkgs <- c("usethis", "janitor", "ggthemes", "gganimate", "sjPlot")
+mys_pkgs <- c("usethis", "janitor", "ggthemes", "gganimate", "sjPlot", "refugees", "slider", "repmis", "jtools", "huxtable")
 pak::pkg_install(mys_pkgs)   
-
 
 mys_pkgs <- c("sf", "rcartocolor", "rmapshaper", "gtExtras", "patchwork", "magick")
 pak::pkg_install(mys_pkgs)   
@@ -107,7 +106,7 @@ pak::pkg_install(mys_pkgs)
 mys_pkgs <- c("kableExtra", "modelsummary", "rpivotTable", "widyr", "irlba", "tmap")
 pak::pkg_install(mys_pkgs)
 
-mys_pkgs <- c("GGally", "ggtext", "Financial-Times/ftplottools", "maps")
+mys_pkgs <- c("GGally", "ggtext", "maps")
 pak::pkg_install(mys_pkgs)  
 
 mys_pkgs <- c("summarytools", "glin/reactable", "agstn/dataxray", "naniar")
@@ -125,12 +124,16 @@ pak::pkg_install(mys_pkgs)
 mys_pkgs <- c("openxlsx", "xlsx")
 pak::pkg_install(mys_pkgs)
 
+my_pkgs <- c("meme", "imager", "sctyner/memer", "devtools", "ggpol", "pxR", "mapproj", "WDI", "wbstats", "rJava")
+pak::pkg_install(mys_pkgs)
+
+
 mys_pkgs <- c("perezp44/pjpv.curso.R.2022", "perezp44/pjpv2020.01")
 pak::pkg_install(mys_pkgs)
 
 
 
-#- finalmente, si te instalas todos los paquetes, se instalarán 284 pkg's aprox. (q ocupan 842 MB aprox.). 
+#- finalmente, si te instalas todos los paquetes, se instalarán 324 pkg's aprox. (q ocupan 842 MB aprox.). 
 #- Si tienes problemas de espacio, siempre podrás desinstalarlos o borrarlos directamente
 pkgs <- pak::pkg_list()
 
