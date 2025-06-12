@@ -58,11 +58,11 @@ toc: true
 ::: {.callout-important collapse="false" appearance="default" icon="false"}
 ## Instalación de paquetes
 
--   En el curso también usaremos algunos paquetes de R, así que hay que instalarlos
+- En el curso también usaremos algunos paquetes de R, así que hay que tencdremos que instalarlos 
 
 - Los paquetes se han de instalar una vez hayas instalado los 3 programas (R, RStudio y Quarto)
 
-- Los paquetes no son necesarios para el primer día del curso, así que, si tenéis dudas, esperaros a que Vicente os explique cómo ejecutar código R. Si no sabéis cómo hacerlo, no os preocupéis, los instalaremos en clase durante la **segunda sesión** del curso
+- Los paquetes no son necesarios para el primer día del curso, así que, si tenéis dudas, esperaros a que Vicente os explique cómo ejecutar código R. Si aún así no sabéis cómo hacerlo, no os preocupéis, volveremos a hablar sobre ello en clase durante la **segunda sesión** del curso
   
 :::
 
@@ -76,7 +76,7 @@ toc: true
 
 - Algunos paquetes se han de compilar por lo que hay que tener las herramientas necesarias, así que:
 
-    - Si usas Windows instalaremos **Rtools**. [Aquí](https://cran.r-project.org/bin/windows/Rtools/) puedes descargarte el instalador adecuado
+    - Si usas Windows tendrás que instalar **Rtools**. [Aquí](https://cran.r-project.org/bin/windows/Rtools/) puedes descargarte el instalador adecuado
     
     - Si tienes un Mac, tendrás que instalar the **Xcode Command Line Tools**. Lo normal es que lo tengas ya instalado, si no fuese el caso, [aquí](https://www.makeuseof.com/install-xcode-command-line-tools/) te explican como hacerlo. Además, como nos cuentan [aquí](https://psyteachr.github.io/msc-data-skills/installingr.html), si tienes un Mac, es conveniente instalar **XQuartz**, para ello sólo tienes que buscar el instalador en <https://www.xquartz.org/>
 
@@ -150,7 +150,7 @@ pkgs <- pak::pkg_list()
 ::: {.callout-important collapse="true" appearance="default" icon="false"}
 ##  Más cosas sobre instalación R
 
-Lo que hay en esta sección [no se ha de ejecutar]{.underline}, y si lo ejecutas 😉, siempre después de haber instalado los 3 programas y los paquetes. Mejor **espérate al segundo día del curso!!**
+Lo que hay en esta sección [no tienes porqué ejecutarlo]{.underline}, **es sólo para tenerlo a mano por si nos hiciese falta durante el curso**
 
 
 - Para chequear qué versiones del software tienes instaladas, podemos usar **en la TERMINAL** el siguiente código:
