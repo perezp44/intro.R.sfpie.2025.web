@@ -58,11 +58,11 @@ toc: true
 ::: {.callout-important collapse="false" appearance="default" icon="false"}
 ## Instalación de paquetes
 
-- En el curso también usaremos algunos paquetes de R, así que hay que tencdremos que instalarlos 
+- En el curso también usaremos algunos paquetes de R, así que tendremos que instalarlos 
 
-- Los paquetes se han de instalar una vez hayas instalado los 3 programas (R, RStudio y Quarto)
+- Los paquetes se han de instalar después de haber instalado los 3 programas (R, RStudio y Quarto)
 
-- Los paquetes no son necesarios para el primer día del curso, así que, si tenéis dudas, esperaros a que Vicente os explique cómo ejecutar código R. Si aún así no sabéis cómo hacerlo, no os preocupéis, volveremos a hablar sobre ello en clase durante la **segunda sesión** del curso
+- Los paquetes [no son necesarios para el primer día del curso]{.underline}, así que, si tenéis dudas, esperaros a que Vicente os explique cómo ejecutar código R. Si aún así no sabéis cómo hacerlo, no os preocupéis, volveremos a hablar sobre ello, en clase, durante la **segunda sesión** del curso
   
 :::
 
