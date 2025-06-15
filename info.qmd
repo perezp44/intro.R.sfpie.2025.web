@@ -176,14 +176,20 @@ quarto install tinytex --update-path
 quarto install tool chromium
 ```
 
+- Algunos chequeos (desde la TERMINAL):
+
+```bash
+quarto check install
+quarto check knitr
+```
+
+
 - Para editar preferencias de RStudio
 
 ```r
 usethis::edit_rstudio_prefs()
 usethis::use_blank_slate() 
-
 ```
-
 
 
 :::
