@@ -1188,7 +1188,7 @@ datos con R</h1>
 <p><span class="violetita">Tarea: descargar un fichero de datos con R</span></p>
 </div>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">Tarea</a></li><li><a href="#tabset-1-2">Pistas</a></li><li><a href="#tabset-1-3">Solución</a></li><li><a href="#tabset-1-4">(Extended solution)</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">Tarea</a></li><li><a href="#tabset-1-2">Pistas</a></li><li><a href="#tabset-1-3">Solución (I)</a></li><li><a href="#tabset-1-4">Solución (II)</a></li><li><a href="#tabset-1-5">(Extended solution)</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p><br></p>
@@ -1229,55 +1229,75 @@ datos con R</h1>
 </div>
 <div id="tabset-1-3">
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-39"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-39" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-39-1" class="code-annotation-target"><a href="#annotated-cell-39-1"></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/archivos_download/refs/heads/master/plazas_turisticas.csv&quot;</span></span>
-<span id="annotated-cell-39-2"><a href="#annotated-cell-39-2"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-39" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-39-3" class="code-annotation-target"><a href="#annotated-cell-39-3"></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(<span class="st">&quot;pruebas&quot;</span>)</span>
-<span id="annotated-cell-39-4"><a href="#annotated-cell-39-4"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-39" data-target-annotation="3" onclick="event.preventDefault();" href>3</a><span id="annotated-cell-39-5" class="code-annotation-target"><a href="#annotated-cell-39-5"></a><span class="fu">download.file</span>(my_url, <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span>)</span>
-<span id="annotated-cell-39-6"><a href="#annotated-cell-39-6"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-39" data-target-annotation="4" onclick="event.preventDefault();" href>4</a><span id="annotated-cell-39-7" class="code-annotation-target"><a href="#annotated-cell-39-7"></a><span class="fu">download.file</span>(<span class="at">url =</span> my_url,</span>
-<span id="annotated-cell-39-8"><a href="#annotated-cell-39-8"></a>              <span class="at">destfile =</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/archivos_download/refs/heads/master/plazas_turisticas.csv&quot;</span></span>
+<span id="cb1-2"><a href></a></span>
+<span id="cb1-3"><a href></a></span>
+<span id="cb1-4"><a href></a><span class="fu">download.file</span>(my_url, <span class="st">&quot;plazas_turisticas.csv&quot;</span>)</span>
+<span id="cb1-5"><a href></a></span>
+<span id="cb1-6"><a href></a><span class="fu">download.file</span>(<span class="at">url =</span> my_url,                               </span>
+<span id="cb1-7"><a href></a>              <span class="at">destfile =</span> <span class="st">&quot;plazas_turisticas.csv&quot;</span>)       </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br><br></p>
+<div class="small">
+<ul>
+<li>¿Donde se guardarán los datos?</li>
+</ul>
+</div>
+</div>
+<div id="tabset-1-4">
+<ul>
+<li>Vamos a ser organizados y guardar los datos en uns subcarpeta que llamaremos “pruebas”</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-40"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-40-1" class="code-annotation-target"><a href="#annotated-cell-40-1"></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/archivos_download/refs/heads/master/plazas_turisticas.csv&quot;</span></span>
+<span id="annotated-cell-40-2"><a href="#annotated-cell-40-2"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-40-3" class="code-annotation-target"><a href="#annotated-cell-40-3"></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(<span class="st">&quot;pruebas&quot;</span>)</span>
+<span id="annotated-cell-40-4"><a href="#annotated-cell-40-4"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="3" onclick="event.preventDefault();" href>3</a><span id="annotated-cell-40-5" class="code-annotation-target"><a href="#annotated-cell-40-5"></a><span class="fu">download.file</span>(my_url, <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span>)</span>
+<span id="annotated-cell-40-6"><a href="#annotated-cell-40-6"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="4" onclick="event.preventDefault();" href>4</a><span id="annotated-cell-40-7" class="code-annotation-target"><a href="#annotated-cell-40-7"></a><span class="fu">download.file</span>(<span class="at">url =</span> my_url,</span>
+<span id="annotated-cell-40-8"><a href="#annotated-cell-40-8"></a>              <span class="at">destfile =</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-39" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-40" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-39" data-code-lines="1" data-code-annotation="1"><span class="small">Almacenamos la <strong>url</strong> en el objeto <code>my_url</code></span></span>
+<span data-code-cell="annotated-cell-40" data-code-lines="1" data-code-annotation="1"><span class="small">Almacenamos la <strong>url</strong> en el objeto <code>my_url</code></span></span>
 </dd>
-<dt data-target-cell="annotated-cell-39" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-40" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-39" data-code-lines="3" data-code-annotation="2"><span class="small">Creamos, con código, una carpeta llamada <code>pruebas</code> donde guardaremos los datos</span></span>
+<span data-code-cell="annotated-cell-40" data-code-lines="3" data-code-annotation="2"><span class="small">Creamos, con código, una carpeta llamada <code>pruebas</code> donde guardaremos los datos</span></span>
 </dd>
-<dt data-target-cell="annotated-cell-39" data-target-annotation="3">3</dt>
+<dt data-target-cell="annotated-cell-40" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-39" data-code-lines="5" data-code-annotation="3"><span class="small">Usamos la función <code>download.file()</code> para descargar los datos que hay en <code>my_url</code>. Los guardamos en la carpeta <code>pruebas</code> de nuestro proyecto. Concretamente en el fichero <code>plazas_turisticas.csv</code></span></span>
+<span data-code-cell="annotated-cell-40" data-code-lines="5" data-code-annotation="3"><span class="small">Usamos la función <code>download.file()</code> para descargar los datos que hay en <code>my_url</code>. Los guardamos en la carpeta <code>pruebas</code> de nuestro proyecto. Concretamente en el fichero <code>plazas_turisticas.csv</code></span></span>
 </dd>
-<dt data-target-cell="annotated-cell-39" data-target-annotation="4">4</dt>
+<dt data-target-cell="annotated-cell-40" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-39" data-code-lines="7,8" data-code-annotation="4"><span class="small">Hace exactamente lo mismo que 3, pero esta vez, <u>hemos especificado el nombre de los dos argumentos de la función</u></span></span>
+<span data-code-cell="annotated-cell-40" data-code-lines="7,8" data-code-annotation="4"><span class="small">Hace exactamente lo mismo que 3, pero esta vez, <u>hemos especificado el nombre de los dos argumentos de la función</u></span></span>
 </dd>
 </dl>
 </div>
 </div>
 </div>
-<div id="tabset-1-4">
+<div id="tabset-1-5">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-40"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-40-1"><a href="#annotated-cell-40-1"></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/archivos_download/refs/heads/master/plazas_turisticas.csv&quot;</span>  </span>
-<span id="annotated-cell-40-2"><a href="#annotated-cell-40-2"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-40-3" class="code-annotation-target"><a href="#annotated-cell-40-3"></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span></span>
-<span id="annotated-cell-40-4"><a href="#annotated-cell-40-4"></a></span>
-<span id="annotated-cell-40-5"><a href="#annotated-cell-40-5"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-40-6" class="code-annotation-target"><a href="#annotated-cell-40-6"></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(<span class="at">url =</span> my_url,</span>
-<span id="annotated-cell-40-7"><a href="#annotated-cell-40-7"></a>                    <span class="at">destfile =</span> my_ruta)       </span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-41"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-41-1"><a href="#annotated-cell-41-1"></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/archivos_download/refs/heads/master/plazas_turisticas.csv&quot;</span>  </span>
+<span id="annotated-cell-41-2"><a href="#annotated-cell-41-2"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-41" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-41-3" class="code-annotation-target"><a href="#annotated-cell-41-3"></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span></span>
+<span id="annotated-cell-41-4"><a href="#annotated-cell-41-4"></a></span>
+<span id="annotated-cell-41-5"><a href="#annotated-cell-41-5"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-41" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-41-6" class="code-annotation-target"><a href="#annotated-cell-41-6"></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(<span class="at">url =</span> my_url,</span>
+<span id="annotated-cell-41-7"><a href="#annotated-cell-41-7"></a>                    <span class="at">destfile =</span> my_ruta)       </span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-40" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-41" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-40" data-code-lines="3" data-code-annotation="1"><span class="small">Es bueno hacer el código modular (por si queremos cambiar las rutas en el futuro). Por eso, especificamos en <code>my_ruta</code> el sitio donde guardaremos los datos</span></span>
+<span data-code-cell="annotated-cell-41" data-code-lines="3" data-code-annotation="1"><span class="small">Es bueno hacer el código modular (por si queremos cambiar las rutas en el futuro). Por eso, especificamos en <code>my_ruta</code> el sitio donde guardaremos los datos</span></span>
 </dd>
-<dt data-target-cell="annotated-cell-40" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-41" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-40" data-code-lines="6" data-code-annotation="2"><span class="small">Usamos <code>curl::curl_download()</code> para descargar el fichero. Es una función más moderna que <code>download.file()</code></span></span>
+<span data-code-cell="annotated-cell-41" data-code-lines="6" data-code-annotation="2"><span class="small">Usamos <code>curl::curl_download()</code> para descargar el fichero. Es una función más moderna que <code>download.file()</code></span></span>
 </dd>
 </dl>
 </div>
@@ -1323,20 +1343,20 @@ datos con R</h1>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href></a><span class="co">#- cuando iniciamos R se cargan automáticamente un grupo de paquetes (R-base)</span></span>
-<span id="cb1-2"><a href></a><span class="fu">print</span>(<span class="fu">.packages</span>()) <span class="co">#- [🌶]imprimimos los nombres de los &quot;currently attached packages&quot;</span></span>
-<span id="cb1-3"><a href></a></span>
-<span id="cb1-4"><a href></a><span class="co">#- en uno de esos paquetes hay un conjunto de datos llamado &quot;iris&quot;</span></span>
-<span id="cb1-5"><a href></a>iris          <span class="co">#- llamamos a &quot;iris&quot;</span></span>
-<span id="cb1-6"><a href></a><span class="fu">find</span>(<span class="st">&quot;iris&quot;</span>)  <span class="co">#- [🌶] ¿donde está iris?</span></span>
-<span id="cb1-7"><a href></a><span class="fu">str</span>(iris)     <span class="co">#- qué es iris?</span></span>
-<span id="cb1-8"><a href></a></span>
-<span id="cb1-9"><a href></a></span>
-<span id="cb1-10"><a href></a>my_iris <span class="ot">&lt;-</span> iris  <span class="co">#- &quot;hacemos una copia&quot; de iris en el Global</span></span>
-<span id="cb1-11"><a href></a><span class="fu">find</span>(<span class="st">&quot;my_iris&quot;</span>)  <span class="co">#- ¿donde está my_iris?</span></span>
-<span id="cb1-12"><a href></a></span>
-<span id="cb1-13"><a href></a>iris <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)    <span class="co">#- creamos un vector llamado iris</span></span>
-<span id="cb1-14"><a href></a><span class="fu">find</span>(<span class="st">&quot;iris&quot;</span>)       <span class="co">#- ¿donde está ahora iris?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href></a><span class="co">#- cuando iniciamos R se cargan automáticamente un grupo de paquetes (R-base)</span></span>
+<span id="cb2-2"><a href></a><span class="fu">print</span>(<span class="fu">.packages</span>()) <span class="co">#- [🌶]imprimimos los nombres de los &quot;currently attached packages&quot;</span></span>
+<span id="cb2-3"><a href></a></span>
+<span id="cb2-4"><a href></a><span class="co">#- en uno de esos paquetes hay un conjunto de datos llamado &quot;iris&quot;</span></span>
+<span id="cb2-5"><a href></a>iris          <span class="co">#- llamamos a &quot;iris&quot;</span></span>
+<span id="cb2-6"><a href></a><span class="fu">find</span>(<span class="st">&quot;iris&quot;</span>)  <span class="co">#- [🌶] ¿donde está iris?</span></span>
+<span id="cb2-7"><a href></a><span class="fu">str</span>(iris)     <span class="co">#- qué es iris?</span></span>
+<span id="cb2-8"><a href></a></span>
+<span id="cb2-9"><a href></a></span>
+<span id="cb2-10"><a href></a>my_iris <span class="ot">&lt;-</span> iris  <span class="co">#- &quot;hacemos una copia&quot; de iris en el Global</span></span>
+<span id="cb2-11"><a href></a><span class="fu">find</span>(<span class="st">&quot;my_iris&quot;</span>)  <span class="co">#- ¿donde está my_iris?</span></span>
+<span id="cb2-12"><a href></a></span>
+<span id="cb2-13"><a href></a>iris <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)    <span class="co">#- creamos un vector llamado iris</span></span>
+<span id="cb2-14"><a href></a><span class="fu">find</span>(<span class="st">&quot;iris&quot;</span>)       <span class="co">#- ¿donde está ahora iris?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1377,18 +1397,18 @@ datos con R</h1>
 <p><br></p>
 <div class="small">
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-41"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-41" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-41-1" class="code-annotation-target"><a href="#annotated-cell-41-1"></a><span class="fu">library</span>(refugees)</span>
-<span id="annotated-cell-41-2"><a href="#annotated-cell-41-2"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-41" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-41-3" class="code-annotation-target"><a href="#annotated-cell-41-3"></a>my_flows <span class="ot">&lt;-</span> flows</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-42"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-42" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-42-1" class="code-annotation-target"><a href="#annotated-cell-42-1"></a><span class="fu">library</span>(refugees)</span>
+<span id="annotated-cell-42-2"><a href="#annotated-cell-42-2"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-42" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-42-3" class="code-annotation-target"><a href="#annotated-cell-42-3"></a>my_flows <span class="ot">&lt;-</span> flows</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-41" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-42" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-41" data-code-lines="1" data-code-annotation="1"><span class="small">Cargamos el paquete en el Global, en la memoria de R. <br> Lógicamente antes hay que instalar el paquete con <code>install.packages(&quot;refugees&quot;)</code></span>.</span>
+<span data-code-cell="annotated-cell-42" data-code-lines="1" data-code-annotation="1"><span class="small">Cargamos el paquete en el Global, en la memoria de R. <br> Lógicamente antes hay que instalar el paquete con <code>install.packages(&quot;refugees&quot;)</code></span>.</span>
 </dd>
-<dt data-target-cell="annotated-cell-41" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-42" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-41" data-code-lines="3" data-code-annotation="2"><span class="small">Creamos un objeto llamado <code>my_flows</code> que es una “copia” de los datos en <code>flows</code></span></span>
+<span data-code-cell="annotated-cell-42" data-code-lines="3" data-code-annotation="2"><span class="small">Creamos un objeto llamado <code>my_flows</code> que es una “copia” de los datos en <code>flows</code></span></span>
 </dd>
 </dl>
 </div>
@@ -1398,12 +1418,12 @@ datos con R</h1>
 <div id="tabset-2-4">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-42"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-42" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-42-1" class="code-annotation-target"><a href="#annotated-cell-42-1"></a>my_flows_2 <span class="ot">&lt;-</span> refugees<span class="sc">::</span>flows</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-43"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-43" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-43-1" class="code-annotation-target"><a href="#annotated-cell-43-1"></a>my_flows_2 <span class="ot">&lt;-</span> refugees<span class="sc">::</span>flows</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-42" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-43" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-42" data-code-lines="1" data-code-annotation="1"><span class="small">Es una forma alternativa de cargar los datos de <code>flows</code> <u>sin cargar todo el paquete</u></span></span>
+<span data-code-cell="annotated-cell-43" data-code-lines="1" data-code-annotation="1"><span class="small">Es una forma alternativa de cargar los datos de <code>flows</code> <u>sin cargar todo el paquete</u></span></span>
 </dd>
 </dl>
 </div>
@@ -1544,18 +1564,18 @@ datos con R</h1>
 <div id="tabset-3-3">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-43"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-43" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-43-1" class="code-annotation-target"><a href="#annotated-cell-43-1"></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span></span>
-<span id="annotated-cell-43-2"><a href="#annotated-cell-43-2"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-43" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-43-3" class="code-annotation-target"><a href="#annotated-cell-43-3"></a>df <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(my_ruta)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-44"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-44" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-44-1" class="code-annotation-target"><a href="#annotated-cell-44-1"></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span></span>
+<span id="annotated-cell-44-2"><a href="#annotated-cell-44-2"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-44" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-44-3" class="code-annotation-target"><a href="#annotated-cell-44-3"></a>df <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(my_ruta)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-43" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-44" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-43" data-code-lines="1" data-code-annotation="1"><span class="small">Guardamos en <code>my_ruta</code> la ruta a los datos que quiero importar</span></span>
+<span data-code-cell="annotated-cell-44" data-code-lines="1" data-code-annotation="1"><span class="small">Guardamos en <code>my_ruta</code> la ruta a los datos que quiero importar</span></span>
 </dd>
-<dt data-target-cell="annotated-cell-43" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-44" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-43" data-code-lines="3" data-code-annotation="2"><span class="small">Creamos un objeto llamado <code>df</code> con los datos que hay en <code>my_ruta</code></span></span>
+<span data-code-cell="annotated-cell-44" data-code-lines="3" data-code-annotation="2"><span class="small">Creamos un objeto llamado <code>df</code> con los datos que hay en <code>my_ruta</code></span></span>
 </dd>
 </dl>
 </div>
@@ -1564,14 +1584,14 @@ datos con R</h1>
 <div id="tabset-3-4">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-44"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-44-1"><a href="#annotated-cell-44-1"></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span>   </span>
-<span id="annotated-cell-44-2"><a href="#annotated-cell-44-2"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-44" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-44-3" class="code-annotation-target"><a href="#annotated-cell-44-3"></a>df <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="at">file =</span> my_ruta)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-45"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-45-1"><a href="#annotated-cell-45-1"></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/plazas_turisticas.csv&quot;</span>   </span>
+<span id="annotated-cell-45-2"><a href="#annotated-cell-45-2"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-45" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-45-3" class="code-annotation-target"><a href="#annotated-cell-45-3"></a>df <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="at">file =</span> my_ruta)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-44" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-45" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-44" data-code-lines="3" data-code-annotation="1"><span class="small">Esta vez ponemos tanto el <u>nombre del argumento</u> (<code>file</code>) como el <u>valor del argumento</u> (<code>my_ruta</code>)</span></span>
+<span data-code-cell="annotated-cell-45" data-code-lines="3" data-code-annotation="1"><span class="small">Esta vez ponemos tanto el <u>nombre del argumento</u> (<code>file</code>) como el <u>valor del argumento</u> (<code>my_ruta</code>)</span></span>
 </dd>
 </dl>
 </div>
@@ -1671,26 +1691,26 @@ datos con R</h1>
 <div id="tabset-4-3">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-45"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-45" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-45-1" class="code-annotation-target"><a href="#annotated-cell-45-1"></a>df <span class="ot">&lt;-</span> iris</span>
-<span id="annotated-cell-45-2"><a href="#annotated-cell-45-2"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-45" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-45-3" class="code-annotation-target"><a href="#annotated-cell-45-3"></a>rio<span class="sc">::</span><span class="fu">export</span>(df, <span class="st">&quot;iris.csv&quot;</span>)</span>
-<span id="annotated-cell-45-4"><a href="#annotated-cell-45-4"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-45" data-target-annotation="3" onclick="event.preventDefault();" href>3</a><span id="annotated-cell-45-5" class="code-annotation-target"><a href="#annotated-cell-45-5"></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> df,</span>
-<span id="annotated-cell-45-6"><a href="#annotated-cell-45-6"></a>            <span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-46"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-46" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-46-1" class="code-annotation-target"><a href="#annotated-cell-46-1"></a>df <span class="ot">&lt;-</span> iris</span>
+<span id="annotated-cell-46-2"><a href="#annotated-cell-46-2"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-46" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-46-3" class="code-annotation-target"><a href="#annotated-cell-46-3"></a>rio<span class="sc">::</span><span class="fu">export</span>(df, <span class="st">&quot;iris.csv&quot;</span>)</span>
+<span id="annotated-cell-46-4"><a href="#annotated-cell-46-4"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-46" data-target-annotation="3" onclick="event.preventDefault();" href>3</a><span id="annotated-cell-46-5" class="code-annotation-target"><a href="#annotated-cell-46-5"></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> df,</span>
+<span id="annotated-cell-46-6"><a href="#annotated-cell-46-6"></a>            <span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-45" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-46" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-45" data-code-lines="1" data-code-annotation="1"><span class="small">Cargamos los datos de <code>iris</code> en R: creamos el objeto <code>df</code></span></span>
+<span data-code-cell="annotated-cell-46" data-code-lines="1" data-code-annotation="1"><span class="small">Cargamos los datos de <code>iris</code> en R: creamos el objeto <code>df</code></span></span>
 </dd>
-<dt data-target-cell="annotated-cell-45" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-46" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-45" data-code-lines="3" data-code-annotation="2"><span class="small">Exportamos <code>df</code> a un fichero llamado <code>iris.csv</code></span><br>
+<span data-code-cell="annotated-cell-46" data-code-lines="3" data-code-annotation="2"><span class="small">Exportamos <code>df</code> a un fichero llamado <code>iris.csv</code></span><br>
 </span>
 </dd>
-<dt data-target-cell="annotated-cell-45" data-target-annotation="3">3</dt>
+<dt data-target-cell="annotated-cell-46" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-45" data-code-lines="5,6" data-code-annotation="3"><span class="small">Hace lo mismo que 2, pero <u>ahora especificamos los nombres de los argumentos</u> ( <code>x</code> y <code>file</code>) de la función <code>rio::export()</code></span></span>
+<span data-code-cell="annotated-cell-46" data-code-lines="5,6" data-code-annotation="3"><span class="small">Hace lo mismo que 2, pero <u>ahora especificamos los nombres de los argumentos</u> ( <code>x</code> y <code>file</code>) de la función <code>rio::export()</code></span></span>
 </dd>
 </dl>
 </div>
@@ -1720,10 +1740,10 @@ datos con R</h1>
 <div id="tabset-4-6">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(df, <span class="st">&quot;./pruebas/iris.csv&quot;</span>) </span>
-<span id="cb2-2"><a href></a></span>
-<span id="cb2-3"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> df,                       </span>
-<span id="cb2-4"><a href></a>            <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.csv&quot;</span>)   </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(df, <span class="st">&quot;./pruebas/iris.csv&quot;</span>) </span>
+<span id="cb3-2"><a href></a></span>
+<span id="cb3-3"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> df,                       </span>
+<span id="cb3-4"><a href></a>            <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.csv&quot;</span>)   </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1750,8 +1770,8 @@ datos con R</h1>
 <p><br></p>
 <p><span class="small">Antes de empezar limpiamos la carpeta <code>pruebas</code> de nuestro proyecto</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href></a>fs<span class="sc">::</span><span class="fu">dir_delete</span>(<span class="st">&quot;pruebas&quot;</span>)    </span>
-<span id="cb3-2"><a href></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(<span class="st">&quot;pruebas&quot;</span>)    </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href></a>fs<span class="sc">::</span><span class="fu">dir_delete</span>(<span class="st">&quot;pruebas&quot;</span>)    </span>
+<span id="cb4-2"><a href></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(<span class="st">&quot;pruebas&quot;</span>)    </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-5-2">
@@ -1759,27 +1779,27 @@ datos con R</h1>
 <li>Descargando los datos</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href></a><span class="co">#- en esta url hay un fichero de datos en formato .csv</span></span>
-<span id="cb4-2"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/iris_data/master/data/iris.csv&quot;</span></span>
-<span id="cb4-3"><a href></a></span>
-<span id="cb4-4"><a href></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(<span class="at">url =</span> my_url, </span>
-<span id="cb4-5"><a href></a>                    <span class="at">destfile =</span>  <span class="st">&quot;./pruebas/iris.csv&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href></a><span class="co">#- en esta url hay un fichero de datos en formato .csv</span></span>
+<span id="cb5-2"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/iris_data/master/data/iris.csv&quot;</span></span>
+<span id="cb5-3"><a href></a></span>
+<span id="cb5-4"><a href></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(<span class="at">url =</span> my_url, </span>
+<span id="cb5-5"><a href></a>                    <span class="at">destfile =</span>  <span class="st">&quot;./pruebas/iris.csv&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
 <li>Importando los datos</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/iris.csv&quot;</span> </span>
-<span id="cb5-2"><a href></a></span>
-<span id="cb5-3"><a href></a>iris <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(my_ruta)       </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href></a>my_ruta <span class="ot">&lt;-</span> <span class="st">&quot;./pruebas/iris.csv&quot;</span> </span>
+<span id="cb6-2"><a href></a></span>
+<span id="cb6-3"><a href></a>iris <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(my_ruta)       </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="1">
 <li>Exportando los datos</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>)  </span>
-<span id="cb6-2"><a href></a></span>
-<span id="cb6-3"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>)  </span>
+<span id="cb7-2"><a href></a></span>
+<span id="cb7-3"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-5-3">
@@ -1792,12 +1812,12 @@ datos con R</h1>
 <p><br></p>
 <div class="small">
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-51"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-51" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-51-1" class="code-annotation-target"><a href="#annotated-cell-51-1"></a>here<span class="sc">::</span><span class="fu">here</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-52"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-52" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-52-1" class="code-annotation-target"><a href="#annotated-cell-52-1"></a>here<span class="sc">::</span><span class="fu">here</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-51" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-52" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-51" data-code-lines="1" data-code-annotation="1"><span class="small"><code>here::here()</code> <u>devuelve la ruta al directorio de trabajo</u> <br> Como trabajamos con Rproject’s, entonces <u>devuelve la ruta a la carpeta del Rproject en <strong>tú ordenador</strong></u>. <br> Esto <u>nos será útil cuando trabajemos con ficheros <code>.qmd</code></u></span></span>
+<span data-code-cell="annotated-cell-52" data-code-lines="1" data-code-annotation="1"><span class="small"><code>here::here()</code> <u>devuelve la ruta al directorio de trabajo</u> <br> Como trabajamos con Rproject’s, entonces <u>devuelve la ruta a la carpeta del Rproject en <strong>tú ordenador</strong></u>. <br> Esto <u>nos será útil cuando trabajemos con ficheros <code>.qmd</code></u></span></span>
 </dd>
 </dl>
 </div>
@@ -1852,7 +1872,7 @@ datos con R</h1>
 <li><strong>Exportar</strong> datos a formato <code>.rds</code></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)   </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)   </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="columns">
@@ -1868,9 +1888,9 @@ datos con R</h1>
 <div class="callout-content">
 <p><span class="small">(Sí, en R se pueden hacer las cosas de muchas maneras!!! 🚨🚨)</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href></a><span class="fu">saveRDS</span>(iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)        <span class="co">#- con base-R</span></span>
-<span id="cb8-2"><a href></a></span>
-<span id="cb8-3"><a href></a>readr<span class="sc">::</span><span class="fu">write_rds</span>(iris, <span class="st">&quot;./pruebas/iris.rds&quot;</span>)      <span class="co">#- con pkg &quot;readr&quot;</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href></a><span class="fu">saveRDS</span>(iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)        <span class="co">#- con base-R</span></span>
+<span id="cb9-2"><a href></a></span>
+<span id="cb9-3"><a href></a>readr<span class="sc">::</span><span class="fu">write_rds</span>(iris, <span class="st">&quot;./pruebas/iris.rds&quot;</span>)      <span class="co">#- con pkg &quot;readr&quot;</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1886,7 +1906,7 @@ datos con R</h1>
 <li><strong>Importar</strong> datos en formato <code>.rds</code></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href></a>df <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href></a>df <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="at">file =</span> <span class="st">&quot;./pruebas/iris.rds&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -1903,9 +1923,9 @@ datos con R</h1>
 <div class="callout-content">
 <p><span class="small">(Sí, en R se pueden hacer las cosas de muchas maneras!!! 🚨🚨)</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href></a>my_iris_1 <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;./pruebas/iris.rds&quot;</span>)         <span class="co">#- con R-base</span></span>
-<span id="cb10-2"><a href></a></span>
-<span id="cb10-3"><a href></a>my_iris_2 <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_rds</span>(<span class="st">&quot;./pruebas/iris.rds&quot;</span>)  <span class="co">#- tidyverse</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href></a>my_iris_1 <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;./pruebas/iris.rds&quot;</span>)         <span class="co">#- con R-base</span></span>
+<span id="cb11-2"><a href></a></span>
+<span id="cb11-3"><a href></a>my_iris_2 <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_rds</span>(<span class="st">&quot;./pruebas/iris.rds&quot;</span>)  <span class="co">#- tidyverse</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1933,9 +1953,9 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href></a><span class="co">#- guardamos los objetos mtcars e iris en un fichero llamado &quot;mtcars_and_iris.RData&quot;</span></span>
-<span id="cb11-2"><a href></a></span>
-<span id="cb11-3"><a href></a><span class="fu">save</span>(mtcars, iris,  <span class="at">file =</span> <span class="st">&quot;./pruebas/mtcars_and_iris.RData&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href></a><span class="co">#- guardamos los objetos mtcars e iris en un fichero llamado &quot;mtcars_and_iris.RData&quot;</span></span>
+<span id="cb12-2"><a href></a></span>
+<span id="cb12-3"><a href></a><span class="fu">save</span>(mtcars, iris,  <span class="at">file =</span> <span class="st">&quot;./pruebas/mtcars_and_iris.RData&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -1946,7 +1966,7 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href></a><span class="fu">load</span>(<span class="at">file =</span> <span class="st">&quot;./pruebas/mtcars_and_iris.RData&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href></a><span class="fu">load</span>(<span class="at">file =</span> <span class="st">&quot;./pruebas/mtcars_and_iris.RData&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -1964,14 +1984,14 @@ datos con R</h1>
 
 </div><div class="column" style="width:90%&quot;;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href></a><span class="co">#- hay que usar load(url())</span></span>
-<span id="cb13-2"><a href></a><span class="co">#- no funciona xq han borrado el archivo</span></span>
-<span id="cb13-3"><a href></a>df <span class="ot">&lt;-</span> <span class="fu">load</span>(<span class="fu">url</span>(<span class="st">&quot;http://gedemced.uab.cat/images/POP_ENC_AMB_2014.Rdata&quot;</span>))</span>
-<span id="cb13-4"><a href></a></span>
-<span id="cb13-5"><a href></a><span class="co">#- pero si aún así no funcionase, usa  repmis::source_data()</span></span>
-<span id="cb13-6"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://github.com/perezp44/LAU2boundaries4spain/blob/master/data/Provincias.rda?raw=true&quot;</span></span>
-<span id="cb13-7"><a href></a>df <span class="ot">&lt;-</span> <span class="fu">load</span>(<span class="fu">url</span>(my_url)) <span class="co">#- no funciona</span></span>
-<span id="cb13-8"><a href></a>df <span class="ot">&lt;-</span> repmis<span class="sc">::</span><span class="fu">source_data</span>(my_url)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href></a><span class="co">#- hay que usar load(url())</span></span>
+<span id="cb14-2"><a href></a><span class="co">#- no funciona xq han borrado el archivo</span></span>
+<span id="cb14-3"><a href></a>df <span class="ot">&lt;-</span> <span class="fu">load</span>(<span class="fu">url</span>(<span class="st">&quot;http://gedemced.uab.cat/images/POP_ENC_AMB_2014.Rdata&quot;</span>))</span>
+<span id="cb14-4"><a href></a></span>
+<span id="cb14-5"><a href></a><span class="co">#- pero si aún así no funcionase, usa  repmis::source_data()</span></span>
+<span id="cb14-6"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://github.com/perezp44/LAU2boundaries4spain/blob/master/data/Provincias.rda?raw=true&quot;</span></span>
+<span id="cb14-7"><a href></a>df <span class="ot">&lt;-</span> <span class="fu">load</span>(<span class="fu">url</span>(my_url)) <span class="co">#- no funciona</span></span>
+<span id="cb14-8"><a href></a>df <span class="ot">&lt;-</span> repmis<span class="sc">::</span><span class="fu">source_data</span>(my_url)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div></div>
 </div>
@@ -2012,11 +2032,11 @@ datos con R</h1>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href></a><span class="co"># install.packages(&quot;eurostat&quot;)</span></span>
-<span id="cb14-2"><a href></a><span class="fu">library</span>(eurostat)</span>
-<span id="cb14-3"><a href></a></span>
-<span id="cb14-4"><a href></a><span class="co">#- importamos los datos de la tabla &quot;cult_emp_sex&quot;: &quot;Cultural employment by sex&quot;</span></span>
-<span id="cb14-5"><a href></a>df <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">get_eurostat</span>(<span class="st">&quot;cult_emp_sex&quot;</span>)   </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href></a><span class="co"># install.packages(&quot;eurostat&quot;)</span></span>
+<span id="cb15-2"><a href></a><span class="fu">library</span>(eurostat)</span>
+<span id="cb15-3"><a href></a></span>
+<span id="cb15-4"><a href></a><span class="co">#- importamos los datos de la tabla &quot;cult_emp_sex&quot;: &quot;Cultural employment by sex&quot;</span></span>
+<span id="cb15-5"><a href></a>df <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">get_eurostat</span>(<span class="st">&quot;cult_emp_sex&quot;</span>)   </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -2035,24 +2055,24 @@ datos con R</h1>
 <li>Para mi es <u>más cómodo buscar datos con el paquete <code>eurostat</code></u>. ¿Probamos?</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href></a><span class="fu">library</span>(eurostat)</span>
-<span id="cb15-2"><a href></a></span>
-<span id="cb15-3"><a href></a><span class="co">#- podemos buscar un  &quot;tema&quot; con la f. search_eurostat()</span></span>
-<span id="cb15-4"><a href></a>my_tema <span class="ot">&lt;-</span> <span class="st">&quot;employment&quot;</span></span>
-<span id="cb15-5"><a href></a></span>
-<span id="cb15-6"><a href></a>aa <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">search_eurostat</span>(<span class="at">pattern =</span> my_tema, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>) </span>
-<span id="cb15-7"><a href></a></span>
-<span id="cb15-8"><a href></a><span class="co">#- elegimos un dataset; por ejemplo &quot;hlth_silc_17&quot;</span></span>
-<span id="cb15-9"><a href></a>my_table <span class="ot">&lt;-</span> <span class="st">&quot;hlth_silc_17&quot;</span> </span>
-<span id="cb15-10"><a href></a></span>
-<span id="cb15-11"><a href></a><span class="co">#- da información sobre la Base de datos que estas buscando</span></span>
-<span id="cb15-12"><a href></a>eurostat<span class="sc">::</span><span class="fu">label_eurostat_tables</span>(my_table) </span>
-<span id="cb15-13"><a href></a></span>
-<span id="cb15-14"><a href></a><span class="co">#-  importamos los datos de &quot;my_table&quot; con get_eurostat()</span></span>
-<span id="cb15-15"><a href></a>df <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">get_eurostat</span>(my_table, <span class="at">time_format =</span> <span class="st">&quot;raw&quot;</span>, <span class="at">keepFlags =</span> <span class="cn">TRUE</span> )   </span>
-<span id="cb15-16"><a href></a></span>
-<span id="cb15-17"><a href></a><span class="co">#- pedimos los descriptores/labels de las series</span></span>
-<span id="cb15-18"><a href></a>df_l <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">label_eurostat</span>(df)        </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href></a><span class="fu">library</span>(eurostat)</span>
+<span id="cb16-2"><a href></a></span>
+<span id="cb16-3"><a href></a><span class="co">#- podemos buscar un  &quot;tema&quot; con la f. search_eurostat()</span></span>
+<span id="cb16-4"><a href></a>my_tema <span class="ot">&lt;-</span> <span class="st">&quot;employment&quot;</span></span>
+<span id="cb16-5"><a href></a></span>
+<span id="cb16-6"><a href></a>aa <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">search_eurostat</span>(<span class="at">pattern =</span> my_tema, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>) </span>
+<span id="cb16-7"><a href></a></span>
+<span id="cb16-8"><a href></a><span class="co">#- elegimos un dataset; por ejemplo &quot;hlth_silc_17&quot;</span></span>
+<span id="cb16-9"><a href></a>my_table <span class="ot">&lt;-</span> <span class="st">&quot;hlth_silc_17&quot;</span> </span>
+<span id="cb16-10"><a href></a></span>
+<span id="cb16-11"><a href></a><span class="co">#- da información sobre la Base de datos que estas buscando</span></span>
+<span id="cb16-12"><a href></a>eurostat<span class="sc">::</span><span class="fu">label_eurostat_tables</span>(my_table) </span>
+<span id="cb16-13"><a href></a></span>
+<span id="cb16-14"><a href></a><span class="co">#-  importamos los datos de &quot;my_table&quot; con get_eurostat()</span></span>
+<span id="cb16-15"><a href></a>df <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">get_eurostat</span>(my_table, <span class="at">time_format =</span> <span class="st">&quot;raw&quot;</span>, <span class="at">keepFlags =</span> <span class="cn">TRUE</span> )   </span>
+<span id="cb16-16"><a href></a></span>
+<span id="cb16-17"><a href></a><span class="co">#- pedimos los descriptores/labels de las series</span></span>
+<span id="cb16-18"><a href></a>df_l <span class="ot">&lt;-</span> eurostat<span class="sc">::</span><span class="fu">label_eurostat</span>(df)        </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section class="slide level3">
@@ -2066,17 +2086,17 @@ datos con R</h1>
 </ul>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href></a><span class="fu">library</span>(quantmod)  <span class="co">#- install.packages(&quot;quantmod&quot;)</span></span>
-<span id="cb16-2"><a href></a></span>
-<span id="cb16-3"><a href></a><span class="co">#- For stocks and shares, the yahoo source is used. </span></span>
-<span id="cb16-4"><a href></a>facebook  <span class="ot">&lt;-</span> <span class="fu">getSymbols</span>(<span class="at">Symbols =</span> <span class="st">&#39;F&#39;</span>, <span class="at">src =</span> <span class="st">&#39;yahoo&#39;</span>, <span class="at">auto.assign =</span> <span class="cn">FALSE</span>)  </span>
-<span id="cb16-5"><a href></a><span class="fu">barChart</span>(facebook) </span>
-<span id="cb16-6"><a href></a></span>
-<span id="cb16-7"><a href></a><span class="co">#- For currencies and metals, the oanda source is used.</span></span>
-<span id="cb16-8"><a href></a>tc_euro_dolar <span class="ot">&lt;-</span> <span class="fu">getSymbols</span>(<span class="at">Symbols =</span> <span class="st">&#39;EUR/USD&#39;</span>, <span class="at">src =</span> <span class="st">&#39;oanda&#39;</span>, <span class="at">auto.assign =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb16-9"><a href></a></span>
-<span id="cb16-10"><a href></a><span class="co">#- For economics series, the FRED source is used. </span></span>
-<span id="cb16-11"><a href></a>Japan_GDP <span class="ot">&lt;-</span> <span class="fu">getSymbols</span>(<span class="at">Symbols =</span> <span class="st">&#39;JPNNGDP&#39;</span>, <span class="at">src =</span> <span class="st">&#39;FRED&#39;</span>, <span class="at">auto.assign =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href></a><span class="fu">library</span>(quantmod)  <span class="co">#- install.packages(&quot;quantmod&quot;)</span></span>
+<span id="cb17-2"><a href></a></span>
+<span id="cb17-3"><a href></a><span class="co">#- For stocks and shares, the yahoo source is used. </span></span>
+<span id="cb17-4"><a href></a>facebook  <span class="ot">&lt;-</span> <span class="fu">getSymbols</span>(<span class="at">Symbols =</span> <span class="st">&#39;F&#39;</span>, <span class="at">src =</span> <span class="st">&#39;yahoo&#39;</span>, <span class="at">auto.assign =</span> <span class="cn">FALSE</span>)  </span>
+<span id="cb17-5"><a href></a><span class="fu">barChart</span>(facebook) </span>
+<span id="cb17-6"><a href></a></span>
+<span id="cb17-7"><a href></a><span class="co">#- For currencies and metals, the oanda source is used.</span></span>
+<span id="cb17-8"><a href></a>tc_euro_dolar <span class="ot">&lt;-</span> <span class="fu">getSymbols</span>(<span class="at">Symbols =</span> <span class="st">&#39;EUR/USD&#39;</span>, <span class="at">src =</span> <span class="st">&#39;oanda&#39;</span>, <span class="at">auto.assign =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb17-9"><a href></a></span>
+<span id="cb17-10"><a href></a><span class="co">#- For economics series, the FRED source is used. </span></span>
+<span id="cb17-11"><a href></a>Japan_GDP <span class="ot">&lt;-</span> <span class="fu">getSymbols</span>(<span class="at">Symbols =</span> <span class="st">&#39;JPNNGDP&#39;</span>, <span class="at">src =</span> <span class="st">&#39;FRED&#39;</span>, <span class="at">auto.assign =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -2100,17 +2120,17 @@ datos con R</h1>
 <div id="tabset-6-1">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href></a><span class="co">#- bonus: le añadimos un libro mas al archivo &quot;./pruebas/iris.xlsx&quot;</span></span>
-<span id="cb17-2"><a href></a></span>
-<span id="cb17-3"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>)  <span class="co">#- por si acaso lo hubiésemos borrado</span></span>
-<span id="cb17-4"><a href></a></span>
-<span id="cb17-5"><a href></a></span>
-<span id="cb17-6"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>, <span class="at">which =</span> <span class="st">&quot;iris_2&quot;</span>)</span>
-<span id="cb17-7"><a href></a></span>
-<span id="cb17-8"><a href></a><span class="co">#- lo mismo pero poniendo los nombres de los argumentos</span></span>
-<span id="cb17-9"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, </span>
-<span id="cb17-10"><a href></a>           <span class="at">file =</span><span class="st">&quot;./pruebas/iris.xlsx&quot;</span>, </span>
-<span id="cb17-11"><a href></a>           <span class="at">which =</span> <span class="st">&quot;iris_3&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href></a><span class="co">#- bonus: le añadimos un libro mas al archivo &quot;./pruebas/iris.xlsx&quot;</span></span>
+<span id="cb18-2"><a href></a></span>
+<span id="cb18-3"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>)  <span class="co">#- por si acaso lo hubiésemos borrado</span></span>
+<span id="cb18-4"><a href></a></span>
+<span id="cb18-5"><a href></a></span>
+<span id="cb18-6"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>, <span class="at">which =</span> <span class="st">&quot;iris_2&quot;</span>)</span>
+<span id="cb18-7"><a href></a></span>
+<span id="cb18-8"><a href></a><span class="co">#- lo mismo pero poniendo los nombres de los argumentos</span></span>
+<span id="cb18-9"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> iris, </span>
+<span id="cb18-10"><a href></a>           <span class="at">file =</span><span class="st">&quot;./pruebas/iris.xlsx&quot;</span>, </span>
+<span id="cb18-11"><a href></a>           <span class="at">which =</span> <span class="st">&quot;iris_3&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <ul>
@@ -2124,22 +2144,22 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href></a><span class="co">#- tenemos que usar el pkg openxlsx</span></span>
-<span id="cb18-2"><a href></a><span class="fu">library</span>(openxlsx) <span class="co">#- pak::pak(&quot;openxlsx&quot;)</span></span>
-<span id="cb18-3"><a href></a></span>
-<span id="cb18-4"><a href></a><span class="co">#- tenemos que crear un &quot;Woorkbook&quot; con la f. loadWorkbook()</span></span>
-<span id="cb18-5"><a href></a>my_workbook <span class="ot">&lt;-</span> openxlsx<span class="sc">::</span><span class="fu">loadWorkbook</span>(<span class="st">&quot;./pruebas/iris.xlsx&quot;</span>)</span>
-<span id="cb18-6"><a href></a></span>
-<span id="cb18-7"><a href></a><span class="co">#- ahora añadimos hojas/sheets al Woorkbook</span></span>
-<span id="cb18-8"><a href></a>openxlsx<span class="sc">::</span><span class="fu">addWorksheet</span>(my_workbook, <span class="st">&quot;iris_2&quot;</span>)</span>
-<span id="cb18-9"><a href></a>openxlsx<span class="sc">::</span><span class="fu">addWorksheet</span>(my_workbook, <span class="st">&quot;my_mtcars&quot;</span>)</span>
-<span id="cb18-10"><a href></a></span>
-<span id="cb18-11"><a href></a><span class="co">#- ahora escribimos datos en las nuevas hojas/sheets q hemos creado</span></span>
-<span id="cb18-12"><a href></a>openxlsx<span class="sc">::</span><span class="fu">writeData</span>(my_workbook, <span class="at">sheet =</span> <span class="st">&quot;iris_2&quot;</span>,    <span class="at">x =</span> iris)</span>
-<span id="cb18-13"><a href></a>openxlsx<span class="sc">::</span><span class="fu">writeData</span>(my_workbook, <span class="at">sheet =</span> <span class="st">&quot;my_mtcars&quot;</span>, <span class="at">x =</span> mtcars)</span>
-<span id="cb18-14"><a href></a></span>
-<span id="cb18-15"><a href></a><span class="co">#- exportamos/guardamos el archivo (con las nuevas sheets)</span></span>
-<span id="cb18-16"><a href></a>openxlsx<span class="sc">::</span><span class="fu">saveWorkbook</span>(my_workbook, <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href></a><span class="co">#- tenemos que usar el pkg openxlsx</span></span>
+<span id="cb19-2"><a href></a><span class="fu">library</span>(openxlsx) <span class="co">#- pak::pak(&quot;openxlsx&quot;)</span></span>
+<span id="cb19-3"><a href></a></span>
+<span id="cb19-4"><a href></a><span class="co">#- tenemos que crear un &quot;Woorkbook&quot; con la f. loadWorkbook()</span></span>
+<span id="cb19-5"><a href></a>my_workbook <span class="ot">&lt;-</span> openxlsx<span class="sc">::</span><span class="fu">loadWorkbook</span>(<span class="st">&quot;./pruebas/iris.xlsx&quot;</span>)</span>
+<span id="cb19-6"><a href></a></span>
+<span id="cb19-7"><a href></a><span class="co">#- ahora añadimos hojas/sheets al Woorkbook</span></span>
+<span id="cb19-8"><a href></a>openxlsx<span class="sc">::</span><span class="fu">addWorksheet</span>(my_workbook, <span class="st">&quot;iris_2&quot;</span>)</span>
+<span id="cb19-9"><a href></a>openxlsx<span class="sc">::</span><span class="fu">addWorksheet</span>(my_workbook, <span class="st">&quot;my_mtcars&quot;</span>)</span>
+<span id="cb19-10"><a href></a></span>
+<span id="cb19-11"><a href></a><span class="co">#- ahora escribimos datos en las nuevas hojas/sheets q hemos creado</span></span>
+<span id="cb19-12"><a href></a>openxlsx<span class="sc">::</span><span class="fu">writeData</span>(my_workbook, <span class="at">sheet =</span> <span class="st">&quot;iris_2&quot;</span>,    <span class="at">x =</span> iris)</span>
+<span id="cb19-13"><a href></a>openxlsx<span class="sc">::</span><span class="fu">writeData</span>(my_workbook, <span class="at">sheet =</span> <span class="st">&quot;my_mtcars&quot;</span>, <span class="at">x =</span> mtcars)</span>
+<span id="cb19-14"><a href></a></span>
+<span id="cb19-15"><a href></a><span class="co">#- exportamos/guardamos el archivo (con las nuevas sheets)</span></span>
+<span id="cb19-16"><a href></a>openxlsx<span class="sc">::</span><span class="fu">saveWorkbook</span>(my_workbook, <span class="st">&quot;./pruebas/iris.xlsx&quot;</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -2159,8 +2179,8 @@ datos con R</h1>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> <span class="fu">list</span>(<span class="at">my_iris =</span> iris, <span class="at">my_pinguinos =</span> penguins), </span>
-<span id="cb19-2"><a href></a>            <span class="at">file =</span> <span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(<span class="at">x =</span> <span class="fu">list</span>(<span class="at">my_iris =</span> iris, <span class="at">my_pinguinos =</span> penguins), </span>
+<span id="cb20-2"><a href></a>            <span class="at">file =</span> <span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="section-9" class="slide level3" data-background-color="#eeeee4">
@@ -2177,14 +2197,14 @@ datos con R</h1>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href></a>iris_1 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>)  <span class="co">#- solo importa el primer libro</span></span>
-<span id="cb20-2"><a href></a>  </span>
-<span id="cb20-3"><a href></a></span>
-<span id="cb20-4"><a href></a>pinguinos_1 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>, <span class="at">sheet =</span> <span class="dv">2</span>)</span>
-<span id="cb20-5"><a href></a></span>
-<span id="cb20-6"><a href></a></span>
-<span id="cb20-7"><a href></a>pinguinos_2 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="at">file =</span> <span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>, </span>
-<span id="cb20-8"><a href></a>                           <span class="at">sheet =</span> <span class="st">&quot;my_pinguinos&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href></a>iris_1 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>)  <span class="co">#- solo importa el primer libro</span></span>
+<span id="cb21-2"><a href></a>  </span>
+<span id="cb21-3"><a href></a></span>
+<span id="cb21-4"><a href></a>pinguinos_1 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>, <span class="at">sheet =</span> <span class="dv">2</span>)</span>
+<span id="cb21-5"><a href></a></span>
+<span id="cb21-6"><a href></a></span>
+<span id="cb21-7"><a href></a>pinguinos_2 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="at">file =</span> <span class="st">&quot;./pruebas/my_iris_pinguinos.xlsx&quot;</span>, </span>
+<span id="cb21-8"><a href></a>                           <span class="at">sheet =</span> <span class="st">&quot;my_pinguinos&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="section-10" class="slide level3" data-background-color="#eeeee4">
@@ -2194,18 +2214,18 @@ datos con R</h1>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href></a><span class="fu">library</span>(readxl) <span class="co">#- necesitamos la función readxl::excel_sheet()</span></span>
-<span id="cb21-2"><a href></a></span>
-<span id="cb21-3"><a href></a>mys_sheets <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">excel_sheets</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_iris_pinguinos.xlsx&quot;</span>))</span>
-<span id="cb21-4"><a href></a></span>
-<span id="cb21-5"><a href></a><span class="co">#- con base::lapply()</span></span>
-<span id="cb21-6"><a href></a>my_dfs_list <span class="ot">&lt;-</span> <span class="fu">lapply</span>(mys_sheets,</span>
-<span id="cb21-7"><a href></a>                      readxl<span class="sc">::</span>read_excel,</span>
-<span id="cb21-8"><a href></a>                      <span class="at">path =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_iris_pinguinos.xlsx&quot;</span>))</span>
-<span id="cb21-9"><a href></a><span class="co">#- con purrr::map()</span></span>
-<span id="cb21-10"><a href></a>my_dfs_list <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map</span>(mys_sheets, </span>
-<span id="cb21-11"><a href></a>                           readxl<span class="sc">::</span>read_excel,</span>
-<span id="cb21-12"><a href></a>                           <span class="at">path =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_iris_pinguinos.xlsx&quot;</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href></a><span class="fu">library</span>(readxl) <span class="co">#- necesitamos la función readxl::excel_sheet()</span></span>
+<span id="cb22-2"><a href></a></span>
+<span id="cb22-3"><a href></a>mys_sheets <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">excel_sheets</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_iris_pinguinos.xlsx&quot;</span>))</span>
+<span id="cb22-4"><a href></a></span>
+<span id="cb22-5"><a href></a><span class="co">#- con base::lapply()</span></span>
+<span id="cb22-6"><a href></a>my_dfs_list <span class="ot">&lt;-</span> <span class="fu">lapply</span>(mys_sheets,</span>
+<span id="cb22-7"><a href></a>                      readxl<span class="sc">::</span>read_excel,</span>
+<span id="cb22-8"><a href></a>                      <span class="at">path =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_iris_pinguinos.xlsx&quot;</span>))</span>
+<span id="cb22-9"><a href></a><span class="co">#- con purrr::map()</span></span>
+<span id="cb22-10"><a href></a>my_dfs_list <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map</span>(mys_sheets, </span>
+<span id="cb22-11"><a href></a>                           readxl<span class="sc">::</span>read_excel,</span>
+<span id="cb22-12"><a href></a>                           <span class="at">path =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_iris_pinguinos.xlsx&quot;</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="small">
@@ -2214,8 +2234,8 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href></a><span class="co">#- Extrayendo un data.frame de una lista: con [[]]</span></span>
-<span id="cb22-2"><a href></a>my_iris <span class="ot">&lt;-</span> my_dfs_list2[[<span class="dv">1</span>]]</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href></a><span class="co">#- Extrayendo un data.frame de una lista: con [[]]</span></span>
+<span id="cb23-2"><a href></a>my_iris <span class="ot">&lt;-</span> my_dfs_list2[[<span class="dv">1</span>]]</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="section-11" class="slide level3" data-background-color="#eeeee4">
@@ -2225,13 +2245,13 @@ datos con R</h1>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href></a><span class="co">#- importamos todos los archivos que hemos creado en &quot;./pruebas/&quot;</span></span>
-<span id="cb23-2"><a href></a><span class="fu">library</span>(purrr)</span>
-<span id="cb23-3"><a href></a>my_carpeta <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>)</span>
-<span id="cb23-4"><a href></a></span>
-<span id="cb23-5"><a href></a>lista_de_archivos <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(my_carpeta) </span>
-<span id="cb23-6"><a href></a></span>
-<span id="cb23-7"><a href></a>my_dfs_list_2 <span class="ot">&lt;-</span> <span class="fu">map</span>(lista_de_archivos, rio<span class="sc">::</span>import)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href></a><span class="co">#- importamos todos los archivos que hemos creado en &quot;./pruebas/&quot;</span></span>
+<span id="cb24-2"><a href></a><span class="fu">library</span>(purrr)</span>
+<span id="cb24-3"><a href></a>my_carpeta <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>)</span>
+<span id="cb24-4"><a href></a></span>
+<span id="cb24-5"><a href></a>lista_de_archivos <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(my_carpeta) </span>
+<span id="cb24-6"><a href></a></span>
+<span id="cb24-7"><a href></a>my_dfs_list_2 <span class="ot">&lt;-</span> <span class="fu">map</span>(lista_de_archivos, rio<span class="sc">::</span>import)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="fragment">
@@ -2269,18 +2289,18 @@ datos con R</h1>
 <li>Para obtener esos datos en R, podemos usar el paquete <code>rvest</code></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href></a><span class="fu">library</span>(rvest)</span>
-<span id="cb24-2"><a href></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb24-3"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://es.wikipedia.org/wiki/Anexo:Municipios_de_la_provincia_de_Teruel&quot;</span></span>
-<span id="cb24-4"><a href></a>content <span class="ot">&lt;-</span> <span class="fu">read_html</span>(my_url)</span>
-<span id="cb24-5"><a href></a></span>
-<span id="cb24-6"><a href></a>body_table <span class="ot">&lt;-</span> content <span class="sc">%&gt;%</span></span>
-<span id="cb24-7"><a href></a>              <span class="fu">html_nodes</span>(<span class="st">&#39;body&#39;</span>)  <span class="sc">%&gt;%</span></span>
-<span id="cb24-8"><a href></a>              <span class="fu">html_nodes</span>(<span class="st">&#39;table&#39;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb24-9"><a href></a>              <span class="fu">html_table</span>(<span class="at">dec =</span> <span class="st">&quot;,&quot;</span>)</span>
-<span id="cb24-10"><a href></a></span>
-<span id="cb24-11"><a href></a><span class="co">#- solo hay una tabla</span></span>
-<span id="cb24-12"><a href></a>Teruel <span class="ot">&lt;-</span> body_table[[<span class="dv">1</span>]]  <span class="co">#- estoy haciendo subsetting de una lista</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href></a><span class="fu">library</span>(rvest)</span>
+<span id="cb25-2"><a href></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb25-3"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://es.wikipedia.org/wiki/Anexo:Municipios_de_la_provincia_de_Teruel&quot;</span></span>
+<span id="cb25-4"><a href></a>content <span class="ot">&lt;-</span> <span class="fu">read_html</span>(my_url)</span>
+<span id="cb25-5"><a href></a></span>
+<span id="cb25-6"><a href></a>body_table <span class="ot">&lt;-</span> content <span class="sc">%&gt;%</span></span>
+<span id="cb25-7"><a href></a>              <span class="fu">html_nodes</span>(<span class="st">&#39;body&#39;</span>)  <span class="sc">%&gt;%</span></span>
+<span id="cb25-8"><a href></a>              <span class="fu">html_nodes</span>(<span class="st">&#39;table&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb25-9"><a href></a>              <span class="fu">html_table</span>(<span class="at">dec =</span> <span class="st">&quot;,&quot;</span>)</span>
+<span id="cb25-10"><a href></a></span>
+<span id="cb25-11"><a href></a><span class="co">#- solo hay una tabla</span></span>
+<span id="cb25-12"><a href></a>Teruel <span class="ot">&lt;-</span> body_table[[<span class="dv">1</span>]]  <span class="co">#- estoy haciendo subsetting de una lista</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 </div>
@@ -2289,12 +2309,12 @@ datos con R</h1>
 <li>Podemos arreglar un poco la tabla (!!!!!!!!)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href></a><span class="fu">names</span>(Teruel) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Nombre&quot;</span>,  <span class="st">&quot;Poblacion&quot;</span>, <span class="st">&quot;Superficie&quot;</span>,</span>
-<span id="cb25-2"><a href></a>                   <span class="st">&quot;Densidad&quot;</span>, <span class="st">&quot;Altitud&quot;</span>, <span class="st">&quot;Comarca&quot;</span>, <span class="st">&quot;Partido_judicial&quot;</span>)</span>
-<span id="cb25-3"><a href></a><span class="fu">library</span>(stringr)</span>
-<span id="cb25-4"><a href></a>Teruel <span class="ot">&lt;-</span> Teruel <span class="sc">%&gt;%</span> <span class="fu">map</span>(str_trim) <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>() <span class="co">#- quita caracteres al final</span></span>
-<span id="cb25-5"><a href></a>Teruel <span class="ot">&lt;-</span> Teruel <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Altitud =</span> <span class="fu">str_replace_all</span>(Altitud,<span class="st">&quot;[[:punct:]]&quot;</span>, <span class="st">&quot;&quot;</span>))</span>
-<span id="cb25-6"><a href></a>Teruel <span class="ot">&lt;-</span> Teruel <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Altitud =</span> <span class="fu">as.double</span>(Altitud)) <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(Altitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href></a><span class="fu">names</span>(Teruel) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Nombre&quot;</span>,  <span class="st">&quot;Poblacion&quot;</span>, <span class="st">&quot;Superficie&quot;</span>,</span>
+<span id="cb26-2"><a href></a>                   <span class="st">&quot;Densidad&quot;</span>, <span class="st">&quot;Altitud&quot;</span>, <span class="st">&quot;Comarca&quot;</span>, <span class="st">&quot;Partido_judicial&quot;</span>)</span>
+<span id="cb26-3"><a href></a><span class="fu">library</span>(stringr)</span>
+<span id="cb26-4"><a href></a>Teruel <span class="ot">&lt;-</span> Teruel <span class="sc">%&gt;%</span> <span class="fu">map</span>(str_trim) <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>() <span class="co">#- quita caracteres al final</span></span>
+<span id="cb26-5"><a href></a>Teruel <span class="ot">&lt;-</span> Teruel <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Altitud =</span> <span class="fu">str_replace_all</span>(Altitud,<span class="st">&quot;[[:punct:]]&quot;</span>, <span class="st">&quot;&quot;</span>))</span>
+<span id="cb26-6"><a href></a>Teruel <span class="ot">&lt;-</span> Teruel <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Altitud =</span> <span class="fu">as.double</span>(Altitud)) <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(Altitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -2322,7 +2342,7 @@ datos con R</h1>
 <div class="line-block">   <span class="small2">Veámoslo un poco:</span></div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href></a><span class="fu">typeof</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href></a><span class="fu">typeof</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;list&quot;</code></pre>
@@ -2330,7 +2350,7 @@ datos con R</h1>
 </div></div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href></a><span class="fu">class</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href></a><span class="fu">class</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;data.frame&quot;</code></pre>
@@ -2338,7 +2358,7 @@ datos con R</h1>
 </div></div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href></a><span class="fu">names</span>(<span class="fu">attributes</span>(iris))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href></a><span class="fu">names</span>(<span class="fu">attributes</span>(iris))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;names&quot;     &quot;class&quot;     &quot;row.names&quot;</code></pre>
@@ -2348,13 +2368,13 @@ datos con R</h1>
 <div class="fragment">
 <div class="line-block">   <span class="small2">Convertimos <code>iris</code> en <code>tibble</code>:</span></div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href></a>iris_2 <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">as_tibble</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href></a>iris_2 <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">as_tibble</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href></a><span class="fu">typeof</span>(iris_2)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href></a><span class="fu">typeof</span>(iris_2)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;list&quot;</code></pre>
@@ -2362,7 +2382,7 @@ datos con R</h1>
 </div></div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href></a><span class="fu">class</span>(iris_2)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href></a><span class="fu">class</span>(iris_2)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;</code></pre>
@@ -2370,7 +2390,7 @@ datos con R</h1>
 </div></div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href></a><span class="fu">names</span>(<span class="fu">attributes</span>(iris_2))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href></a><span class="fu">names</span>(<span class="fu">attributes</span>(iris_2))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;class&quot;     &quot;row.names&quot; &quot;names&quot;    </code></pre>
@@ -2396,7 +2416,7 @@ datos con R</h1>
 <li>Este truco es chulo … pero no hay que hacerlo</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href></a>my_data <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="fu">file.choose</span>())</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href></a>my_data <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="fu">file.choose</span>())</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <ul>
@@ -2455,7 +2475,7 @@ datos con R</h1>
 <li>Como nosotros trabajamos con Rproject’s, las rutas relativas que vayamos construyendo serán rutas <strong>relativas a la carpeta raíz de tu Rproject</strong>, y <code>here::he()</code> las convertirá en rutas absolutas. Por ejemplo:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href></a>my_ruta <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;datos&quot;</span>, <span class="st">&quot;my_archivo.csv&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href></a>my_ruta <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;datos&quot;</span>, <span class="st">&quot;my_archivo.csv&quot;</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">    <span class="small"><code>C:\Users\my_usuario\my_Rproject\datos\my_archivo.csv</code></span></div>
 <p><br></p>
@@ -2485,7 +2505,7 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.xlsx&quot;</span> )</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="at">file =</span> <span class="st">&quot;./pruebas/iris.xlsx&quot;</span> )</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="small">
@@ -2494,7 +2514,7 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;iris.xlsx&quot;</span> ))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href></a>rio<span class="sc">::</span><span class="fu">export</span>(iris, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;iris.xlsx&quot;</span> ))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="small">
@@ -2503,7 +2523,7 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href></a>here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;iris.xlsx&quot;</span> )</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href></a>here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;iris.xlsx&quot;</span> )</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <pre><code>C:\my_usuario\my_proyecto\pruebas\iris.xlsx</code></pre>
@@ -2615,15 +2635,15 @@ datos con R</h1>
 </div>
 <div id="tabset-8-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href></a><span class="fu">rm</span>(<span class="at">list =</span> <span class="fu">ls</span>())  <span class="co">#- antes vamos a limpiar el Global env.</span></span>
-<span id="cb45-2"><a href></a></span>
-<span id="cb45-3"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://www.ine.es/daco/daco42/codmun/codmun20/20codmun.xlsx&quot;</span></span>
-<span id="cb45-4"><a href></a></span>
-<span id="cb45-5"><a href></a>my_ruta_guardar <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;20codmun.xlsx&quot;</span>)</span>
-<span id="cb45-6"><a href></a></span>
-<span id="cb45-7"><a href></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(my_url, my_ruta_guardar) <span class="co">#- lo guardo en disco</span></span>
-<span id="cb45-8"><a href></a></span>
-<span id="cb45-9"><a href></a>df_1 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(my_ruta_guardar) <span class="co">#- q pb tenemos?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href></a><span class="fu">rm</span>(<span class="at">list =</span> <span class="fu">ls</span>())  <span class="co">#- antes vamos a limpiar el Global env.</span></span>
+<span id="cb46-2"><a href></a></span>
+<span id="cb46-3"><a href></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://www.ine.es/daco/daco42/codmun/codmun20/20codmun.xlsx&quot;</span></span>
+<span id="cb46-4"><a href></a></span>
+<span id="cb46-5"><a href></a>my_ruta_guardar <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;20codmun.xlsx&quot;</span>)</span>
+<span id="cb46-6"><a href></a></span>
+<span id="cb46-7"><a href></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(my_url, my_ruta_guardar) <span class="co">#- lo guardo en disco</span></span>
+<span id="cb46-8"><a href></a></span>
+<span id="cb46-9"><a href></a>df_1 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(my_ruta_guardar) <span class="co">#- q pb tenemos?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-8-3">
@@ -2635,39 +2655,39 @@ datos con R</h1>
 </div>
 <div id="tabset-8-4">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href></a>df_2 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(my_url, <span class="at">skip =</span> <span class="dv">1</span>)  <span class="co">#- no funciona. readxl solo lee del PC</span></span>
-<span id="cb46-2"><a href></a></span>
-<span id="cb46-3"><a href></a>my_ruta_guardar <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;20codmun.xlsx&quot;</span>)</span>
-<span id="cb46-4"><a href></a></span>
-<span id="cb46-5"><a href></a>df_2 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(my_ruta_guardar, <span class="at">skip =</span> <span class="dv">1</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href></a>df_2 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(my_url, <span class="at">skip =</span> <span class="dv">1</span>)  <span class="co">#- no funciona. readxl solo lee del PC</span></span>
+<span id="cb47-2"><a href></a></span>
+<span id="cb47-3"><a href></a>my_ruta_guardar <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;20codmun.xlsx&quot;</span>)</span>
+<span id="cb47-4"><a href></a></span>
+<span id="cb47-5"><a href></a>df_2 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(my_ruta_guardar, <span class="at">skip =</span> <span class="dv">1</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-8-5">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href></a><span class="co">#- script para bajar la relación de municipios INE a 1 de enero de 2021 </span></span>
-<span id="cb47-2"><a href></a>url_descarga <span class="ot">&lt;-</span> <span class="st">&quot;https://www.ine.es/daco/daco42/codmun/diccionario21.xlsx&quot;</span></span>
-<span id="cb47-3"><a href></a>nombre_fichero <span class="ot">&lt;-</span> <span class="st">&quot;diccionario21.xlsx&quot;</span></span>
-<span id="cb47-4"><a href></a></span>
-<span id="cb47-5"><a href></a><span class="co">#- obtengo el nombre del archivo</span></span>
-<span id="cb47-6"><a href></a>nombre_fichero <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_extract</span>(url_descarga, <span class="st">&quot;([^</span><span class="sc">\\</span><span class="st">/]+$)&quot;</span>)</span>
-<span id="cb47-7"><a href></a></span>
-<span id="cb47-8"><a href></a><span class="co">#- añado la fecha de descarga al nombre de archivo</span></span>
-<span id="cb47-9"><a href></a>extension <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_extract</span>(url_descarga, <span class="st">&quot;([^</span><span class="sc">\\</span><span class="st">.]+$)&quot;</span>)</span>
-<span id="cb47-10"><a href></a>nombre <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(nombre_fichero, <span class="fu">paste0</span>(<span class="st">&quot;.&quot;</span>,extension))</span>
-<span id="cb47-11"><a href></a>nombre_fichero <span class="ot">&lt;-</span> <span class="fu">paste0</span>(nombre , <span class="st">&quot;_&quot;</span>, <span class="fu">Sys.Date</span>(), <span class="st">&quot;.&quot;</span>, extension)</span>
-<span id="cb47-12"><a href></a></span>
-<span id="cb47-13"><a href></a><span class="co">#- lo guardo</span></span>
-<span id="cb47-14"><a href></a>my_ruta <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, nombre_fichero) <span class="co">#- ruta para guardar el fichero</span></span>
-<span id="cb47-15"><a href></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(<span class="at">url =</span> url_descarga, <span class="at">destfile =</span> my_ruta)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href></a><span class="co">#- script para bajar la relación de municipios INE a 1 de enero de 2021 </span></span>
+<span id="cb48-2"><a href></a>url_descarga <span class="ot">&lt;-</span> <span class="st">&quot;https://www.ine.es/daco/daco42/codmun/diccionario21.xlsx&quot;</span></span>
+<span id="cb48-3"><a href></a>nombre_fichero <span class="ot">&lt;-</span> <span class="st">&quot;diccionario21.xlsx&quot;</span></span>
+<span id="cb48-4"><a href></a></span>
+<span id="cb48-5"><a href></a><span class="co">#- obtengo el nombre del archivo</span></span>
+<span id="cb48-6"><a href></a>nombre_fichero <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_extract</span>(url_descarga, <span class="st">&quot;([^</span><span class="sc">\\</span><span class="st">/]+$)&quot;</span>)</span>
+<span id="cb48-7"><a href></a></span>
+<span id="cb48-8"><a href></a><span class="co">#- añado la fecha de descarga al nombre de archivo</span></span>
+<span id="cb48-9"><a href></a>extension <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_extract</span>(url_descarga, <span class="st">&quot;([^</span><span class="sc">\\</span><span class="st">.]+$)&quot;</span>)</span>
+<span id="cb48-10"><a href></a>nombre <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(nombre_fichero, <span class="fu">paste0</span>(<span class="st">&quot;.&quot;</span>,extension))</span>
+<span id="cb48-11"><a href></a>nombre_fichero <span class="ot">&lt;-</span> <span class="fu">paste0</span>(nombre , <span class="st">&quot;_&quot;</span>, <span class="fu">Sys.Date</span>(), <span class="st">&quot;.&quot;</span>, extension)</span>
+<span id="cb48-12"><a href></a></span>
+<span id="cb48-13"><a href></a><span class="co">#- lo guardo</span></span>
+<span id="cb48-14"><a href></a>my_ruta <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, nombre_fichero) <span class="co">#- ruta para guardar el fichero</span></span>
+<span id="cb48-15"><a href></a>curl<span class="sc">::</span><span class="fu">curl_download</span>(<span class="at">url =</span> url_descarga, <span class="at">destfile =</span> my_ruta)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Importo el fichero a la memoria de R</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href></a>df <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="at">path =</span> my_ruta, <span class="at">skip =</span> <span class="dv">1</span>)</span>
-<span id="cb48-2"><a href></a></span>
-<span id="cb48-3"><a href></a><span class="co">#- la verdad es que skip = 1 también hubiese funcionado con el paquete `rio` </span></span>
-<span id="cb48-4"><a href></a><span class="co">#- ya que `rio` llama a `readxl`</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href></a>df <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="at">path =</span> my_ruta, <span class="at">skip =</span> <span class="dv">1</span>)</span>
+<span id="cb49-2"><a href></a></span>
+<span id="cb49-3"><a href></a><span class="co">#- la verdad es que skip = 1 también hubiese funcionado con el paquete `rio` </span></span>
+<span id="cb49-4"><a href></a><span class="co">#- ya que `rio` llama a `readxl`</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -2685,57 +2705,57 @@ datos con R</h1>
 <li>Arreglo los datos a mi gusto</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb49-2"><a href></a></span>
-<span id="cb49-3"><a href></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
-<span id="cb49-4"><a href></a>      <span class="fu">mutate</span>(<span class="at">ine_muni =</span> <span class="fu">paste0</span>(CPRO, CMUN)) <span class="sc">%&gt;%</span> </span>
-<span id="cb49-5"><a href></a>      <span class="fu">mutate</span>(<span class="at">year =</span> <span class="st">&quot;2021&quot;</span>) <span class="sc">%&gt;%</span>          <span class="co">#- !! cómo lo guardaría?</span></span>
-<span id="cb49-6"><a href></a>      <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">as.numeric</span>(year)) <span class="sc">%&gt;%</span> </span>
-<span id="cb49-7"><a href></a>      <span class="fu">rename</span>(<span class="at">ine_muni.n =</span> NOMBRE) <span class="sc">%&gt;%</span> </span>
-<span id="cb49-8"><a href></a>      <span class="fu">rename</span>(<span class="at">ine_prov =</span> CPRO) <span class="sc">%&gt;%</span> </span>
-<span id="cb49-9"><a href></a>      <span class="fu">select</span>(ine_muni, ine_muni.n, ine_prov, year) </span>
-<span id="cb49-10"><a href></a></span>
-<span id="cb49-11"><a href></a><span class="fu">str</span>(df)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb50-2"><a href></a></span>
+<span id="cb50-3"><a href></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb50-4"><a href></a>      <span class="fu">mutate</span>(<span class="at">ine_muni =</span> <span class="fu">paste0</span>(CPRO, CMUN)) <span class="sc">%&gt;%</span> </span>
+<span id="cb50-5"><a href></a>      <span class="fu">mutate</span>(<span class="at">year =</span> <span class="st">&quot;2021&quot;</span>) <span class="sc">%&gt;%</span>          <span class="co">#- !! cómo lo guardaría?</span></span>
+<span id="cb50-6"><a href></a>      <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">as.numeric</span>(year)) <span class="sc">%&gt;%</span> </span>
+<span id="cb50-7"><a href></a>      <span class="fu">rename</span>(<span class="at">ine_muni.n =</span> NOMBRE) <span class="sc">%&gt;%</span> </span>
+<span id="cb50-8"><a href></a>      <span class="fu">rename</span>(<span class="at">ine_prov =</span> CPRO) <span class="sc">%&gt;%</span> </span>
+<span id="cb50-9"><a href></a>      <span class="fu">select</span>(ine_muni, ine_muni.n, ine_prov, year) </span>
+<span id="cb50-10"><a href></a></span>
+<span id="cb50-11"><a href></a><span class="fu">str</span>(df)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <ul>
 <li>Si quisiera exportar el archivo</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(df, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_relacion_muni_2021.csv&quot;</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(df, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;pruebas&quot;</span>, <span class="st">&quot;my_relacion_muni_2021.csv&quot;</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <ul>
 <li>Podemos contar el nº de municipios por provincia (de muchas maneras distintas)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href></a>df_muni <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(ine_prov) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">numero_muni =</span> <span class="fu">n</span>())</span>
-<span id="cb51-2"><a href></a>df_muni <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">count</span>(ine_prov)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href></a>df_muni <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(ine_prov) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">numero_muni =</span> <span class="fu">n</span>())</span>
+<span id="cb52-2"><a href></a>df_muni <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">count</span>(ine_prov)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <ul>
 <li>Si quisiéramos saber el nombre de las provincias</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href></a><span class="co">#- pak::pak(&quot;perezp44/pjpv.curso.R.2022&quot;)</span></span>
-<span id="cb52-2"><a href></a>codigos_prov <span class="ot">&lt;-</span> pjpv.curso.R<span class="fl">.2022</span><span class="sc">::</span>ine_pob_mun_1996_2021 <span class="sc">%&gt;%</span> </span>
-<span id="cb52-3"><a href></a>                <span class="fu">select</span>(ine_prov, ine_prov.n) <span class="sc">%&gt;%</span> </span>
-<span id="cb52-4"><a href></a>                <span class="fu">distinct</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href></a><span class="co">#- pak::pak(&quot;perezp44/pjpv.curso.R.2022&quot;)</span></span>
+<span id="cb53-2"><a href></a>codigos_prov <span class="ot">&lt;-</span> pjpv.curso.R<span class="fl">.2022</span><span class="sc">::</span>ine_pob_mun_1996_2021 <span class="sc">%&gt;%</span> </span>
+<span id="cb53-3"><a href></a>                <span class="fu">select</span>(ine_prov, ine_prov.n) <span class="sc">%&gt;%</span> </span>
+<span id="cb53-4"><a href></a>                <span class="fu">distinct</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <ul>
 <li>Para fusionar los 2 ficheros</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href></a><span class="co">#- fusiono los 2 ficheros (lo veremos!!)</span></span>
-<span id="cb53-2"><a href></a>df_ok <span class="ot">&lt;-</span> <span class="fu">left_join</span>(df_muni, codigos_prov)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href></a><span class="co">#- fusiono los 2 ficheros (lo veremos!!)</span></span>
+<span id="cb54-2"><a href></a>df_ok <span class="ot">&lt;-</span> <span class="fu">left_join</span>(df_muni, codigos_prov)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <ul>
 <li>Borro la carpeta (para dejar el Rproject limpio)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href></a>fs<span class="sc">::</span><span class="fu">dir_delete</span>(<span class="st">&quot;pruebas&quot;</span>)  <span class="co">#- [🌶] borro la carpeta pruebas</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href></a>fs<span class="sc">::</span><span class="fu">dir_delete</span>(<span class="st">&quot;pruebas&quot;</span>)  <span class="co">#- [🌶] borro la carpeta pruebas</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -2846,9 +2866,9 @@ datos con R</h1>
 
 </div><div class="column" style="width:80%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href></a>my_f_suma <span class="ot">&lt;-</span> <span class="cf">function</span>(n1 , n2){</span>
-<span id="cb56-2"><a href></a>  n1 <span class="sc">+</span> n2</span>
-<span id="cb56-3"><a href></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href></a>my_f_suma <span class="ot">&lt;-</span> <span class="cf">function</span>(n1 , n2){</span>
+<span id="cb57-2"><a href></a>  n1 <span class="sc">+</span> n2</span>
+<span id="cb57-3"><a href></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:10%;">
 
@@ -2863,10 +2883,10 @@ datos con R</h1>
 
 </div><div class="column" style="width:80%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href></a><span class="fu">my_f_suma</span>(<span class="dv">3</span> , <span class="dv">5</span>)</span>
-<span id="cb57-2"><a href></a><span class="fu">my_f_suma</span>(<span class="at">n1 =</span> <span class="dv">3</span> , <span class="at">n2 =</span> <span class="dv">5</span>)</span>
-<span id="cb57-3"><a href></a></span>
-<span id="cb57-4"><a href></a>aa <span class="ot">&lt;-</span> <span class="fu">my_f_suma</span>(<span class="dv">30</span> , <span class="dv">50</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href></a><span class="fu">my_f_suma</span>(<span class="dv">3</span> , <span class="dv">5</span>)</span>
+<span id="cb58-2"><a href></a><span class="fu">my_f_suma</span>(<span class="at">n1 =</span> <span class="dv">3</span> , <span class="at">n2 =</span> <span class="dv">5</span>)</span>
+<span id="cb58-3"><a href></a></span>
+<span id="cb58-4"><a href></a>aa <span class="ot">&lt;-</span> <span class="fu">my_f_suma</span>(<span class="dv">30</span> , <span class="dv">50</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:10%;">
 
@@ -2938,9 +2958,9 @@ datos con R</h1>
 <p><span class="small2"><strong>Tarea:</strong> ejecuta estas instrucciones e intenta entender que ocurre</span></p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">9</span>)</span>
-<span id="cb58-2"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">9</span>, <span class="dv">4</span>)   <span class="co">#- no funciona ¿por qué? ¿cuantos argumentos tiene la f. sqrt()?</span></span>
-<span id="cb58-3"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="st">&quot;9&quot;</span>)    <span class="co">#- no funciona, ¿por qué? ¿Cómo, de que tipo, ha de ser el argumento?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">9</span>)</span>
+<span id="cb59-2"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">9</span>, <span class="dv">4</span>)   <span class="co">#- no funciona ¿por qué? ¿cuantos argumentos tiene la f. sqrt()?</span></span>
+<span id="cb59-3"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="st">&quot;9&quot;</span>)    <span class="co">#- no funciona, ¿por qué? ¿Cómo, de que tipo, ha de ser el argumento?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="centradisimo-inicial">
@@ -2953,21 +2973,21 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">9</span>)       <span class="co">#- en realidad &quot;no hace falta&quot; poner el nombre del argumento</span></span>
-<span id="cb59-2"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> <span class="dv">9</span>)   <span class="co">#- </span></span>
-<span id="cb59-3"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> <span class="dv">4</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">9</span>)       <span class="co">#- en realidad &quot;no hace falta&quot; poner el nombre del argumento</span></span>
+<span id="cb60-2"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> <span class="dv">9</span>)   <span class="co">#- </span></span>
+<span id="cb60-3"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> <span class="dv">4</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="centradisimo-inicial fragment">
 <p><span class="violetita small2">hay que diferenciar el nombre y el valor del argumento de una función</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">25</span></span>
-<span id="cb60-2"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(x)</span>
-<span id="cb60-3"><a href aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb60-4"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> x)          <span class="co">#- !!!</span></span>
-<span id="cb60-5"><a href aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb60-6"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> un_valor)   <span class="co">#- !!!</span></span>
-<span id="cb60-7"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">nn =</span> <span class="dv">9</span>)         <span class="co">#- !!!</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">25</span></span>
+<span id="cb61-2"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(x)</span>
+<span id="cb61-3"><a href aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-4"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> x)          <span class="co">#- !!!</span></span>
+<span id="cb61-5"><a href aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-6"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">x =</span> un_valor)   <span class="co">#- !!!</span></span>
+<span id="cb61-7"><a href aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="at">nn =</span> <span class="dv">9</span>)         <span class="co">#- !!!</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -3000,34 +3020,34 @@ datos con R</h1>
 <p>Esto no funciona:</p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>)  <span class="co">#- como no especificamos el valor del argumento &quot;base&quot;,</span></span>
-<span id="cb61-2"><a href></a>           <span class="co">#- R lo fija a su valor x defecto; es decir, base = exp(1) </span></span>
-<span id="cb61-3"><a href></a>           <span class="co">#- así que estamos tomando logaritmos naturales</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>)  <span class="co">#- como no especificamos el valor del argumento &quot;base&quot;,</span></span>
+<span id="cb62-2"><a href></a>           <span class="co">#- R lo fija a su valor x defecto; es decir, base = exp(1) </span></span>
+<span id="cb62-3"><a href></a>           <span class="co">#- así que estamos tomando logaritmos naturales</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="small2">
 <p>Varias soluciones:</p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href></a><span class="fu">log</span>(<span class="at">x =</span> <span class="dv">1000</span>, <span class="at">base =</span> <span class="dv">10</span>)    <span class="co">#- GOOD</span></span>
-<span id="cb62-2"><a href></a></span>
-<span id="cb62-3"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>, <span class="at">base =</span> <span class="dv">10</span>)        <span class="co">#- es equivalente</span></span>
-<span id="cb62-4"><a href></a><span class="fu">log</span>(<span class="at">x =</span> <span class="dv">1000</span>, <span class="dv">10</span>)           <span class="co">#- es equivalente</span></span>
-<span id="cb62-5"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>, <span class="dv">10</span>)               <span class="co">#- es equivalente</span></span>
-<span id="cb62-6"><a href></a></span>
-<span id="cb62-7"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>, <span class="at">bas =</span> <span class="dv">10</span>)         <span class="co">#- funciona, pero ... mejor no hacerlo</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href></a><span class="fu">log</span>(<span class="at">x =</span> <span class="dv">1000</span>, <span class="at">base =</span> <span class="dv">10</span>)    <span class="co">#- GOOD</span></span>
+<span id="cb63-2"><a href></a></span>
+<span id="cb63-3"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>, <span class="at">base =</span> <span class="dv">10</span>)        <span class="co">#- es equivalente</span></span>
+<span id="cb63-4"><a href></a><span class="fu">log</span>(<span class="at">x =</span> <span class="dv">1000</span>, <span class="dv">10</span>)           <span class="co">#- es equivalente</span></span>
+<span id="cb63-5"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>, <span class="dv">10</span>)               <span class="co">#- es equivalente</span></span>
+<span id="cb63-6"><a href></a></span>
+<span id="cb63-7"><a href></a><span class="fu">log</span>(<span class="dv">1000</span>, <span class="at">bas =</span> <span class="dv">10</span>)         <span class="co">#- funciona, pero ... mejor no hacerlo</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="small2">
 <div class="line-block">    ¿Por qué no podemos usar la expresión de abajo?</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href></a><span class="fu">log</span>(<span class="dv">10</span>, <span class="dv">1000</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href></a><span class="fu">log</span>(<span class="dv">10</span>, <span class="dv">1000</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="small2">
 <p>¿Funcionará?</p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href></a><span class="fu">log</span>(<span class="at">base =</span> <span class="dv">10</span>, <span class="dv">1000</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href></a><span class="fu">log</span>(<span class="at">base =</span> <span class="dv">10</span>, <span class="dv">1000</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -3044,26 +3064,26 @@ datos con R</h1>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href></a>add1 <span class="ot">&lt;-</span> <span class="cf">function</span>(my_number) {</span>
-<span id="cb65-2"><a href></a>  my_number <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb65-3"><a href></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href></a>add1 <span class="ot">&lt;-</span> <span class="cf">function</span>(my_number) {</span>
+<span id="cb66-2"><a href></a>  my_number <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb66-3"><a href></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href></a>my_suma_3a <span class="ot">&lt;-</span> <span class="cf">function</span>(n1 , n2, n3){</span>
-<span id="cb66-2"><a href></a>   n1 <span class="sc">+</span> n2 <span class="sc">+</span> n3</span>
-<span id="cb66-3"><a href></a>}</span>
-<span id="cb66-4"><a href></a></span>
-<span id="cb66-5"><a href></a><span class="co">#- vamos a usar nuestra función</span></span>
-<span id="cb66-6"><a href></a><span class="fu">my_suma_3a</span>(<span class="dv">2</span>)        <span class="co">#- xq no funciona?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><br></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href></a>my_suma_3b <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n1 =</span> <span class="dv">4</span> , <span class="at">n2 =</span> <span class="dv">6</span>, <span class="at">n3 =</span> <span class="dv">3</span>){</span>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href></a>my_suma_3a <span class="ot">&lt;-</span> <span class="cf">function</span>(n1 , n2, n3){</span>
 <span id="cb67-2"><a href></a>   n1 <span class="sc">+</span> n2 <span class="sc">+</span> n3</span>
 <span id="cb67-3"><a href></a>}</span>
 <span id="cb67-4"><a href></a></span>
-<span id="cb67-5"><a href></a><span class="fu">my_suma_3b</span>(<span class="dv">2</span>)        <span class="co">#- xq ahora sí funciona?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb67-5"><a href></a><span class="co">#- vamos a usar nuestra función</span></span>
+<span id="cb67-6"><a href></a><span class="fu">my_suma_3a</span>(<span class="dv">2</span>)        <span class="co">#- xq no funciona?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href></a>my_suma_3b <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n1 =</span> <span class="dv">4</span> , <span class="at">n2 =</span> <span class="dv">6</span>, <span class="at">n3 =</span> <span class="dv">3</span>){</span>
+<span id="cb68-2"><a href></a>   n1 <span class="sc">+</span> n2 <span class="sc">+</span> n3</span>
+<span id="cb68-3"><a href></a>}</span>
+<span id="cb68-4"><a href></a></span>
+<span id="cb68-5"><a href></a><span class="fu">my_suma_3b</span>(<span class="dv">2</span>)        <span class="co">#- xq ahora sí funciona?</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="small2">
